@@ -14,7 +14,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!assets/|styles.css|horsham-painters-logo(?:-cropped)?\\.png|robots.txt|sitemap.xml).*)",
+      "source": "/((?!assets/|styles.css|horsham-painters-logo(?:-cropped)?\\.png|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }
   ]
