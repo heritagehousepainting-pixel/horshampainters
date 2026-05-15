@@ -619,6 +619,35 @@ details {
   text-align: center;
 }
 
+.nearby-links {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  grid-column: 1 / -1;
+  margin-top: 18px;
+  padding: 22px;
+}
+
+.nearby-links h3 {
+  color: #fff;
+  font-family: Poppins, system-ui, sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.25;
+  margin: 0 0 8px;
+}
+
+.nearby-links p {
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+  max-width: 880px;
+}
+
+.nearby-links a {
+  color: #fff;
+  font-weight: 800;
+  text-underline-offset: 0.18em;
+}
+
 .why {
   background: linear-gradient(135deg, #f8f6f0, #e8dfcf);
   display: block;
