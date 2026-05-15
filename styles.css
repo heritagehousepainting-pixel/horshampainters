@@ -374,6 +374,30 @@ p {
   text-align: center;
 }
 
+.form-submit:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.form-status {
+  font-weight: 700;
+  margin-top: 10px;
+  min-height: 1.35em;
+  text-align: center;
+}
+
+.form-status[data-state="success"] {
+  color: #176b3a;
+}
+
+.form-status[data-state="error"] {
+  color: #a73535;
+}
+
+.form-status[data-state="pending"] {
+  color: var(--muted);
+}
+
 .section {
   padding: clamp(64px, 9vw, 112px) clamp(20px, 6vw, 86px);
   scroll-margin-top: 92px;

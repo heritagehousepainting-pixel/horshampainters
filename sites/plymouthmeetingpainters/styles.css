@@ -167,6 +167,29 @@ p { margin: 0; overflow-wrap: break-word; }
 .estimate-form input:focus, .estimate-form select:focus, .estimate-form textarea:focus { border-color: var(--gold); outline: 3px solid rgba(201, 162, 79, 0.22); }
 .form-submit { border: 0; margin-top: 18px; width: 100%; }
 .form-disclaimer { margin-top: 12px; text-align: center; }
+.form-submit:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.form-status {
+  font-weight: 700;
+  margin-top: 10px;
+  min-height: 1.35em;
+  text-align: center;
+}
+
+.form-status[data-state="success"] {
+  color: #176b3a;
+}
+
+.form-status[data-state="error"] {
+  color: #a73535;
+}
+
+.form-status[data-state="pending"] {
+  color: var(--muted);
+}
 .section { padding: clamp(64px, 9vw, 112px) clamp(20px, 6vw, 86px); scroll-margin-top: 92px; }
 .intro, .local { align-items: start; display: grid; gap: 40px; grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr); }
 .section-copy p:not(.eyebrow), .section-heading p, .why p, .faq p, .site-footer p { color: var(--muted); }

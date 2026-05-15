@@ -360,6 +360,19 @@ p { margin: 0; overflow-wrap: break-word; }
 .estimate-form input:focus, .estimate-form select:focus, .estimate-form textarea:focus { border-color: var(--gold); outline: 3px solid rgba(201, 162, 79, 0.22); }
 .form-submit { border: 0; margin-top: 18px; width: 100%; }
 .form-disclaimer { margin-top: 12px; text-align: center; }
+.form-submit:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+.form-status {
+  font-weight: 700;
+  margin-top: 10px;
+  min-height: 1.35em;
+  text-align: center;
+}
+.form-status[data-state="success"] { color: #176b3a; }
+.form-status[data-state="error"] { color: #a73535; }
+.form-status[data-state="pending"] { color: var(--muted); }
 .section { padding: clamp(64px, 9vw, 112px) clamp(20px, 6vw, 86px); scroll-margin-top: 92px; }
 .intro, .local { align-items: start; display: grid; gap: 40px; grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr); }
 .section-copy p:not(.eyebrow), .section-heading p, .why p, .faq p, .site-footer p { color: var(--muted); }
@@ -724,10 +737,8 @@ function page(site) {
               <li>Exterior painting special</li>
             </ul>
           </div>
-          <form class="estimate-form" action="https://formsubmit.co/${email}" method="POST" aria-label="Request a painting estimate">
+          <form class="estimate-form" action="/api/estimate" method="POST" aria-label="Request a painting estimate">
             <input type="hidden" name="_subject" value="New ${esc(site.brand)} Estimate Request">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="Marketing site" value="${esc(site.domain)}">
             <input type="hidden" name="Seasonal offer" value="10% off qualifying exterior painting projects">
             <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -751,6 +762,7 @@ function page(site) {
             </div>
             <button class="button primary form-submit" type="submit">Send Estimate Request</button>
             <p class="form-disclaimer">Free local estimates for ${esc(site.shortPlace)}-area painting projects. Exterior offer applies to qualifying projects.</p>
+            <p class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
@@ -867,6 +879,56 @@ function page(site) {
       <div><strong>Local painting searches</strong><p>Exterior painter ${esc(site.shortPlace)} PA, ${esc(site.shortPlace)} painters, house painter ${esc(site.place)} PA, interior painting ${esc(nearby[0])}, exterior painting ${esc(nearby[1])}, painters ${esc(nearby[2])} PA, ${esc(site.county)} painting contractor.</p></div>
       <p class="copyright">&copy; 2026 ${esc(site.brand)}, a marketing site by Heritage House Painting. Heritage House Painting remains the service provider of record.</p>
     </footer>
+    <script>
+      document.querySelectorAll(".estimate-form").forEach((form) => {
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const button = form.querySelector(".form-submit");
+          const status = form.querySelector(".form-status");
+          const originalText = button ? button.textContent : "Send Estimate Request";
+
+          if (status) {
+            status.textContent = "Sending your request...";
+            status.dataset.state = "pending";
+          }
+          if (button) {
+            button.disabled = true;
+            button.textContent = "Sending...";
+          }
+
+          try {
+            const formData = new FormData(form);
+            const payload = Object.fromEntries(formData.entries());
+            const response = await fetch(form.action, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            });
+            const result = await response.json().catch(() => ({}));
+
+            if (!response.ok || !result.ok) {
+              throw new Error(result.error || "Submission failed");
+            }
+
+            form.reset();
+            if (status) {
+              status.textContent = "Thanks. Your estimate request was sent.";
+              status.dataset.state = "success";
+            }
+          } catch (error) {
+            if (status) {
+              status.textContent = "Sorry, the request could not be sent. Please call (215) 791-4043.";
+              status.dataset.state = "error";
+            }
+          } finally {
+            if (button) {
+              button.disabled = false;
+              button.textContent = originalText;
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
 `;
@@ -965,7 +1027,7 @@ function vercel() {
   ],
   "rewrites": [
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }
   ]
@@ -985,6 +1047,8 @@ for (const site of sites) {
   fs.writeFileSync(path.join(dir, "sitemap.xml"), sitemap(site));
   fs.writeFileSync(path.join(dir, "llms.txt"), llms(site));
   fs.writeFileSync(path.join(dir, "vercel.json"), vercel());
+  fs.mkdirSync(path.join(dir, "api"), { recursive: true });
+  fs.writeFileSync(path.join(dir, "api", "estimate.js"), 'module.exports = require("../../../api/estimate");\n');
 }
 
 console.log(`Generated ${sites.length} sites in ${outRoot}`);

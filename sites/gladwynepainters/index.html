@@ -380,10 +380,8 @@
               <li>Exterior painting special</li>
             </ul>
           </div>
-          <form class="estimate-form" action="https://formsubmit.co/heritagehousepainting@gmail.com" method="POST" aria-label="Request a painting estimate">
+          <form class="estimate-form" action="/api/estimate" method="POST" aria-label="Request a painting estimate">
             <input type="hidden" name="_subject" value="New Gladwyne Painters Estimate Request">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="Marketing site" value="gladwynepainters.com">
             <input type="hidden" name="Seasonal offer" value="10% off qualifying exterior painting projects">
             <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -407,6 +405,7 @@
             </div>
             <button class="button primary form-submit" type="submit">Send Estimate Request</button>
             <p class="form-disclaimer">Free local estimates for Gladwyne-area painting projects. Exterior offer applies to qualifying projects.</p>
+            <p class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
@@ -523,5 +522,56 @@
       <div><strong>Local painting searches</strong><p>Exterior painter Gladwyne PA, Gladwyne painters, house painter Gladwyne PA, interior painting Lower Merion Township, exterior painting Bryn Mawr, painters Villanova PA, Montgomery County painting contractor.</p></div>
       <p class="copyright">&copy; 2026 Gladwyne Painters, a marketing site by Heritage House Painting. Heritage House Painting remains the service provider of record.</p>
     </footer>
+    <script>
+      document.querySelectorAll(".estimate-form").forEach((form) => {
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const button = form.querySelector(".form-submit");
+          const status = form.querySelector(".form-status");
+          const originalText = button ? button.textContent : "Send Estimate Request";
+
+          if (status) {
+            status.textContent = "Sending your request...";
+            status.dataset.state = "pending";
+          }
+          if (button) {
+            button.disabled = true;
+            button.textContent = "Sending...";
+          }
+
+          try {
+            const formData = new FormData(form);
+            const payload = Object.fromEntries(formData.entries());
+            const response = await fetch(form.action, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            });
+            const result = await response.json().catch(() => ({}));
+
+            if (!response.ok || !result.ok) {
+              throw new Error(result.error || "Submission failed");
+            }
+
+            form.reset();
+            if (status) {
+              status.textContent = "Thanks. Your estimate request was sent.";
+              status.dataset.state = "success";
+            }
+          } catch (error) {
+            if (status) {
+              status.textContent = "Sorry, the request could not be sent. Please call (215) 791-4043.";
+              status.dataset.state = "error";
+            }
+          } finally {
+            if (button) {
+              button.disabled = false;
+              button.textContent = originalText;
+            }
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>

@@ -54,7 +54,7 @@
       "destination": "/sites/lowergwyneddpainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -104,7 +104,7 @@
       "destination": "/sites/lowergwyneddpainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -154,7 +154,7 @@
       "destination": "/sites/amblerpainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -204,7 +204,7 @@
       "destination": "/sites/amblerpainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -254,7 +254,7 @@
       "destination": "/sites/bluebellpainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -304,7 +304,7 @@
       "destination": "/sites/bluebellpainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -354,7 +354,7 @@
       "destination": "/sites/lafayettehillpainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -404,7 +404,7 @@
       "destination": "/sites/lafayettehillpainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -454,7 +454,7 @@
       "destination": "/sites/plymouthmeetingpainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -504,7 +504,7 @@
       "destination": "/sites/plymouthmeetingpainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -554,7 +554,7 @@
       "destination": "/sites/gladwynepainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -604,7 +604,7 @@
       "destination": "/sites/gladwynepainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -654,7 +654,7 @@
       "destination": "/sites/waynepainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -704,7 +704,7 @@
       "destination": "/sites/waynepainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -754,7 +754,7 @@
       "destination": "/sites/ardmorepainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -804,7 +804,7 @@
       "destination": "/sites/ardmorepainters/llms.txt"
     },
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
           "type": "host",
@@ -814,7 +814,7 @@
       "destination": "/sites/ardmorepainters/index.html"
     },
     {
-      "source": "/((?!assets/|styles.css|horsham-painters-logo(?:-cropped)?\\.png|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|assets/|styles.css|horsham-painters-logo(?:-cropped)?\\.png|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }
   ]

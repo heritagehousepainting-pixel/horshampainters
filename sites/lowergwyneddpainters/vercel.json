@@ -14,7 +14,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }
   ]
