@@ -14,6 +14,806 @@
   ],
   "rewrites": [
     {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/styles.css"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/sitemap.xml"
+    },
+    {
+      "source": "/llms.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/llms.txt"
+    },
+    {
+      "source": "/((?!styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/index.html"
+    },
+    {
       "source": "/((?!assets/|styles.css|horsham-painters-logo(?:-cropped)?\\.png|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }
