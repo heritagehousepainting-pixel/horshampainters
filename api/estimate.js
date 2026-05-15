@@ -1,5 +1,5 @@
 const DEFAULT_TO_EMAIL = "heritagehousepainting@gmail.com";
-const DEFAULT_FROM_EMAIL = "Heritage House Painting <onboarding@resend.dev>";
+const DEFAULT_FROM_EMAIL = "Heritage House Painting <estimates@send.heritagehousepainting.com>";
 
 function readField(body, name) {
   const value = body && body[name];
