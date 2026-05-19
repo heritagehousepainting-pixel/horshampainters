@@ -5,11 +5,10 @@ Ambler Painters is a local painting estimate website for homeowners searching fo
 Primary URL: https://amblerpainters.com/
 
 Primary services:
-- Exterior house painting
-- Interior painting
-- Drywall repair and painting
-- Trim painting and finish work
-- Cabinet painting
+- Exterior house painting: https://amblerpainters.com/exterior-painting
+- Interior painting: https://amblerpainters.com/interior-painting
+- Drywall repair and painting: https://amblerpainters.com/drywall-repair
+- Cabinet and trim painting: https://amblerpainters.com/cabinet-trim-painting
 - Commercial painting
 - Local painting estimates
 
@@ -30,6 +29,12 @@ Primary service area:
 - Wissahickon, PA
 - Flourtown, PA
 - Montgomery County, PA
+
+Local context:
+- Roads and landmarks: Butler Pike, Bethlehem Pike, Limekiln Pike, Tennis Avenue, and the Wissahickon Valley area
+- Property types: borough homes, Main Street properties, townhomes, and nearby township houses
+- Local proof: borough homes, porches, older trim, Main Street properties, and nearby Upper Dublin and Lower Gwynedd neighborhoods
+- Nearby landmarks: Ambler Main Street, Butler Pike, Wissahickon Valley, Limekiln Pike, Fort Washington
 
 Contact:
 - Phone: +1-215-791-4043

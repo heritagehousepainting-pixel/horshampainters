@@ -7,6 +7,7 @@ const phoneHref = "+12157914043";
 const email = "heritagehousepainting@gmail.com";
 const address = "4001 1st Ave, Lafayette Hill, PA 19444";
 const analyticsScript = '<script defer src="/analytics.js" data-posthog-key="phc_AnJ7YEniPw5kv7NrfxB9gQLQ4RpqLWu6vkGASD3FVejB" data-posthog-host="https://us.i.posthog.com"></script>';
+const logoFile = "horsham-painters-logo-cropped.png";
 
 const images = {
   heroInterior: "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/c9aa5163-aece-42eb-ffa6-ad2e89dfce00/public",
@@ -22,6 +23,27 @@ const images = {
 };
 
 const sites = [
+  {
+    folder: "horshampainters",
+    domain: "horshampainters.com",
+    brand: "Horsham Painters",
+    place: "Horsham Township",
+    shortPlace: "Horsham",
+    county: "Montgomery County",
+    monogram: "HP",
+    coords: "40.1784, -75.1285",
+    colors: { ink: "#1d2227", navy: "#15283a", blue: "#315f84", gold: "#caa24e", paper: "#f2efe6" },
+    nearby: ["Hatboro", "Warrington", "Warminster", "Ambler", "Upper Dublin", "Upper Moreland", "Lower Gwynedd", "Maple Glen", "Willow Grove", "Dresher"],
+    related: [
+      { domain: "amblerpainters.com", text: "Ambler painting services" },
+      { domain: "bluebellpainters.com", text: "Blue Bell painting services" },
+      { domain: "lowergwyneddpainters.com", text: "Lower Gwynedd painting estimates" },
+    ],
+    roads: "Horsham Road, Easton Road, Welsh Road, County Line Road, and the Horsham Township neighborhoods",
+    positioning: "township homes, split-level houses, colonials, townhomes, and nearby commercial spaces",
+    localProof: "Horsham Township exteriors, older trim, siding, shutters, porch railings, and interior repainting for homes near Easton Road and Horsham Road",
+    landmarks: ["Horsham Township", "Horsham Road", "Easton Road", "County Line Road", "Hatboro"],
+  },
   {
     folder: "lowergwyneddpainters",
     domain: "lowergwyneddpainters.com",
@@ -40,6 +62,8 @@ const sites = [
     ],
     roads: "Bethlehem Pike, Sumneytown Pike, Welsh Road, Penllyn Blue Bell Pike, and Spring House village",
     positioning: "township homes, established neighborhoods, and premium Montgomery County properties",
+    localProof: "large lots, mature landscaping, and township homes where exterior prep, clean edges, and schedule communication matter",
+    landmarks: ["Spring House Village", "Gwynedd Valley", "Penllyn", "Bethlehem Pike", "Lower Gwynedd Township"],
   },
   {
     folder: "amblerpainters",
@@ -59,6 +83,8 @@ const sites = [
     ],
     roads: "Butler Pike, Bethlehem Pike, Limekiln Pike, Tennis Avenue, and the Wissahickon Valley area",
     positioning: "borough homes, Main Street properties, townhomes, and nearby township houses",
+    localProof: "borough homes, porches, older trim, Main Street properties, and nearby Upper Dublin and Lower Gwynedd neighborhoods",
+    landmarks: ["Ambler Main Street", "Butler Pike", "Wissahickon Valley", "Limekiln Pike", "Fort Washington"],
   },
   {
     folder: "bluebellpainters",
@@ -78,6 +104,8 @@ const sites = [
     ],
     roads: "Skippack Pike, DeKalb Pike, Township Line Road, Penllyn Blue Bell Pike, and Center Square",
     positioning: "Blue Bell homes, larger residential properties, and professional spaces near Whitpain Township",
+    localProof: "Whitpain-area homes, larger exterior elevations, office properties, and trim-heavy interiors near Skippack Pike",
+    landmarks: ["Skippack Pike", "Center Square", "Whitpain Township", "Penllyn Blue Bell Pike", "DeKalb Pike"],
   },
   {
     folder: "lafayettehillpainters",
@@ -97,6 +125,8 @@ const sites = [
     ],
     roads: "Germantown Pike, Joshua Road, Ridge Pike, Harts Lane, and Barren Hill Road",
     positioning: "Whitemarsh Township homes, stone houses, townhomes, and local commercial spaces",
+    localProof: "stone homes, Whitemarsh Township interiors, porch railings, shutters, and exterior trim close to Germantown Pike",
+    landmarks: ["Germantown Pike", "Barren Hill", "Whitemarsh Township", "Joshua Road", "Chestnut Hill"],
   },
   {
     folder: "plymouthmeetingpainters",
@@ -116,6 +146,8 @@ const sites = [
     ],
     roads: "Germantown Pike, Butler Pike, Chemical Road, Plymouth Road, and the Plymouth Meeting Mall area",
     positioning: "residential neighborhoods, townhomes, office properties, and nearby Whitemarsh Township homes",
+    localProof: "townhomes, single-family houses, office suites, and exterior projects around Germantown Pike and Chemical Road",
+    landmarks: ["Plymouth Meeting Mall", "Germantown Pike", "Chemical Road", "Butler Pike", "Whitemarsh Township"],
   },
   {
     folder: "gladwynepainters",
@@ -135,6 +167,8 @@ const sites = [
     ],
     roads: "Youngs Ford Road, Conshohocken State Road, Waverly Road, and the Lower Merion Main Line",
     positioning: "Main Line estates, historic homes, stone houses, and luxury residential properties",
+    localProof: "Main Line estates, historic stone homes, detailed millwork, and exterior trim where finish quality is highly visible",
+    landmarks: ["Youngs Ford Road", "Conshohocken State Road", "Lower Merion Township", "Waverly Road", "Bryn Mawr"],
   },
   {
     folder: "waynepainters",
@@ -153,6 +187,8 @@ const sites = [
     ],
     roads: "Lancaster Avenue, Wayne Avenue, Conestoga Road, North Wayne Avenue, and Radnor Township neighborhoods",
     positioning: "Main Line homes, Radnor Township properties, historic houses, and professional spaces",
+    localProof: "Radnor Township homes, Main Line interiors, exterior trim, shutters, and Lancaster Avenue-area commercial spaces",
+    landmarks: ["Lancaster Avenue", "Radnor Township", "Wayne Avenue", "St. Davids", "North Wayne"],
   },
   {
     folder: "ardmorepainters",
@@ -171,6 +207,43 @@ const sites = [
     ],
     roads: "Lancaster Avenue, Ardmore Avenue, Montgomery Avenue, Haverford Road, and Suburban Square",
     positioning: "Main Line homes, twin homes, stone houses, retail spaces, and Lower Merion properties",
+    localProof: "Main Line twins, stone homes, retail spaces, row homes, and Lower Merion interiors close to Lancaster Avenue",
+    landmarks: ["Suburban Square", "Lancaster Avenue", "Lower Merion Township", "Ardmore Avenue", "Haverford Township"],
+  },
+];
+
+const servicePages = [
+  {
+    slug: "exterior-painting",
+    title: "Exterior Painting",
+    serviceType: "Exterior house painting",
+    summary: "Exterior painting for siding, trim, shutters, doors, porches, railings, and curb appeal updates.",
+    keywords: ["exterior painter", "exterior house painting", "siding painting", "trim painting", "shutter painting"],
+    image: images.exterior,
+  },
+  {
+    slug: "interior-painting",
+    title: "Interior Painting",
+    serviceType: "Interior house painting",
+    summary: "Interior painting for walls, ceilings, kitchens, bedrooms, stairways, living rooms, and whole-home repaints.",
+    keywords: ["interior painter", "interior house painting", "wall painting", "ceiling painting", "whole-home repainting"],
+    image: images.interior,
+  },
+  {
+    slug: "drywall-repair",
+    title: "Drywall Repair & Painting",
+    serviceType: "Drywall repair and painting",
+    summary: "Drywall patching, sanding, priming, texture blending, and repainting for clean finished walls.",
+    keywords: ["drywall repair", "drywall patching", "wall repair", "painting after drywall repair"],
+    image: images.drywall,
+  },
+  {
+    slug: "cabinet-trim-painting",
+    title: "Cabinet & Trim Painting",
+    serviceType: "Cabinet and trim painting",
+    summary: "Cabinet painting, trim painting, doors, built-ins, finish carpentry touch-ups, and detailed coating work.",
+    keywords: ["cabinet painting", "trim painting", "door painting", "built-in painting", "finish painting"],
+    image: images.bedroom,
   },
 ];
 
@@ -189,6 +262,10 @@ function linkedList(items) {
     if (index === items.length - 1) return `and ${link}`;
     return `${link}${items.length > 2 ? "," : ""}`;
   }).join(" ");
+}
+
+function serviceLinks(site) {
+  return servicePages.map((service) => `<a href="/${service.slug}">${esc(service.title)}</a>`).join(" ");
 }
 
 function css(site) {
@@ -392,17 +469,21 @@ p { margin: 0; overflow-wrap: break-word; }
 .proof-grid strong { color: var(--blue); display: block; font-size: 2rem; line-height: 1; }
 .proof-grid span { color: var(--muted); display: block; font-size: 0.85rem; font-weight: 700; line-height: 1.35; margin-top: 10px; }
 .answer-section, .services, .township-seo, .faq { background: #fff; }
+.local-proof { background: #f8f6f0; }
 .project-photos { background: var(--paper); }
-.answer-grid { display: grid; gap: 18px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.answer-grid article {
+.answer-grid, .proof-notes { display: grid; gap: 18px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.proof-notes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.answer-grid article, .proof-notes article {
   background: #f8f6f0;
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: 0 12px 28px rgba(10, 22, 40, 0.06);
   padding: 22px;
 }
-.answer-grid h3, .township-grid h3 { color: var(--navy); font-family: Poppins, system-ui, sans-serif; font-size: 1.06rem; }
-.answer-grid p, .township-grid p, .service-grid article p { color: var(--muted); }
+.proof-notes article { background: #fff; }
+.answer-grid h3, .proof-notes h3, .township-grid h3 { color: var(--navy); font-family: Poppins, system-ui, sans-serif; font-size: 1.06rem; }
+.answer-grid p, .proof-notes p, .township-grid p, .service-grid article p { color: var(--muted); }
+.proof-notes a { color: var(--blue); display: inline-block; font-weight: 800; margin: 0 10px 8px 0; text-underline-offset: 0.18em; }
 .section-heading { align-items: center; display: flex; flex-direction: column; margin: 0 auto 42px; max-width: 920px; text-align: center; width: 100%; }
 .section-heading .eyebrow { display: block; margin-left: auto; margin-right: auto; text-align: center; width: 100%; }
 .section-heading h2, .section-copy h2 { max-width: 900px; }
@@ -504,7 +585,7 @@ details p { margin-top: 12px; }
   .site-header { align-items: flex-start; gap: 16px; flex-wrap: wrap; }
   nav { flex-wrap: wrap; justify-content: flex-end; }
   .intro, .hero-content, .local, .why, .contact-panel, .site-footer { grid-template-columns: 1fr; }
-  .service-grid, .answer-grid, .why-grid, .photo-grid, .township-grid { grid-template-columns: 1fr; }
+  .service-grid, .answer-grid, .proof-notes, .why-grid, .photo-grid, .township-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .site-header { align-items: center; position: static; }
@@ -532,8 +613,9 @@ details p { margin-top: 12px; }
 function page(site) {
   const nearby = site.nearby;
   const nearbyText = nearby.join(", ");
-  const title = `${site.brand} | Exterior & Interior House Painting in ${site.shortPlace}, PA`;
-  const description = `${site.brand} provides exterior house painting, interior painting, drywall repair, trim finishing, and local painting estimates in ${site.place}, ${nearby.slice(0, 6).join(", ")}, and nearby communities. Seasonal exterior painting offer available.`;
+  const title = `${site.brand} | Painters in ${site.shortPlace}, PA`;
+  const description = `Exterior and interior painting in ${site.shortPlace}, PA. Local estimates near ${nearby.slice(0, 2).join(", ")}. 10% exterior offer.`;
+  const logoUrl = `https://${site.domain}/${logoFile}`;
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -564,6 +646,10 @@ function page(site) {
           url: images.heroInterior,
           caption: "Finished residential painting project",
         },
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["#hero-title", "#local-answer-title", "#township-seo-title"],
+        },
         breadcrumb: { "@id": `https://${site.domain}/#breadcrumb` },
         inLanguage: "en-US",
       },
@@ -581,7 +667,21 @@ function page(site) {
         telephone: "+1-215-791-4043",
         email,
         image: images.heroInterior,
-        logo: `https://${site.domain}/`,
+        logo: logoUrl,
+        parentOrganization: {
+          "@type": "HomeAndConstructionBusiness",
+          name: "Heritage House Painting",
+          telephone: "+1-215-791-4043",
+          email,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "4001 1st Ave",
+            addressLocality: "Lafayette Hill",
+            addressRegion: "PA",
+            postalCode: "19444",
+            addressCountry: "US",
+          },
+        },
         priceRange: "$$",
         paymentAccepted: "Cash, Check, Credit Card",
         currenciesAccepted: "USD",
@@ -603,6 +703,11 @@ function page(site) {
           addressCountry: "US",
         },
         areaServed: [{ "@type": "City", name: site.place, addressRegion: "PA" }, ...nearby.map((name) => ({ "@type": "City", name, addressRegion: "PA" })), { "@type": "AdministrativeArea", name: `${site.county}, PA` }],
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: site.coords.split(",")[0].trim(),
+          longitude: site.coords.split(",")[1].trim(),
+        },
         knowsAbout: [
           "Exterior house painting",
           `Exterior painter in ${site.shortPlace} PA`,
@@ -615,6 +720,7 @@ function page(site) {
           "Commercial painting",
           "Color consultation",
           `House painters in ${site.place} PA`,
+          ...site.landmarks,
         ],
         openingHoursSpecification: [
           { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "08:00", closes: "19:00" },
@@ -663,6 +769,16 @@ function page(site) {
           { "@type": "Question", name: `How do I request a painting estimate in ${site.shortPlace}?`, acceptedAnswer: { "@type": "Answer", text: `Use the estimate form on ${site.domain} or call ${phone}. Include the project address, service needed, rooms or exterior areas, preferred timing, and any color or repair details.` } },
         ],
       },
+      ...servicePages.map((service) => ({
+        "@type": "Service",
+        "@id": `https://${site.domain}/${service.slug}#service`,
+        name: `${service.title} in ${site.shortPlace}, PA`,
+        serviceType: service.serviceType,
+        description: `${service.summary} Available in ${site.place}, ${nearby.slice(0, 5).join(", ")}, and nearby ${site.county} communities.`,
+        provider: { "@id": `https://${site.domain}/#localbusiness` },
+        areaServed: [{ "@type": "City", name: site.place, addressRegion: "PA" }, ...nearby.slice(0, 6).map((name) => ({ "@type": "City", name, addressRegion: "PA" }))],
+        url: `https://${site.domain}/${service.slug}`,
+      })),
     ],
   };
   return `<!doctype html>
@@ -690,7 +806,7 @@ function page(site) {
     <meta property="og:image:alt" content="Finished house painting project by ${esc(site.brand)}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${esc(site.brand)} | Exterior &amp; Interior Painters in ${site.shortPlace}, PA">
-    <meta name="twitter:description" content="${esc(`Exterior painting, interior painting, drywall repair, and local painting estimates for ${site.place} and nearby homeowners. Seasonal 10% exterior painting offer available.`)}">
+    <meta name="twitter:description" content="${esc(description)}">
     <meta name="twitter:image" content="${images.heroInterior}">
     <meta name="twitter:image:alt" content="Finished house painting project by ${esc(site.brand)}">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
@@ -728,7 +844,7 @@ function page(site) {
           <div class="hero-copy-block">
             <p class="eyebrow">${esc(site.place)}, PA exterior and interior painters</p>
             <h1 id="hero-title">${esc(site.brand)} for exterior and interior work</h1>
-            <p class="hero-copy">Exterior house painting, interior painting, drywall repair, and trim finishing in ${esc(site.place)}, ${esc(nearby.slice(0, 5).join(", "))}, and nearby communities. Ask about 10% off qualifying exterior painting projects this season.</p>
+          <p class="hero-copy">Exterior house painting, interior painting, drywall repair, and trim finishing in ${esc(site.place)}, ${esc(nearby.slice(0, 5).join(", "))}, and nearby communities. Ask about 10% off qualifying exterior painting projects this season.</p>
             <div class="hero-actions">
               <a class="button primary" href="tel:${phoneHref}">Call ${phone}</a>
               <a class="button secondary" href="#services">View Services</a>
@@ -772,6 +888,7 @@ function page(site) {
         <div class="section-copy">
           <h2>Exterior and interior house painting in ${esc(site.place)} and nearby communities</h2>
           <p>${esc(site.brand)} exists to make it easier for local homeowners to find a painting estimate when searching for painters in ${esc(site.place)}, ${esc(nearby.slice(0, 5).join(", "))}, and surrounding communities. This season, exterior painting is a priority for homeowners planning siding, trim, shutters, porch, door, and curb appeal updates.</p>
+          <p>${esc(site.shortPlace)} projects often involve ${esc(site.localProof)}. The page is written to answer local search questions directly, including who serves the area, which services are available, where estimates are requested, and which nearby communities are covered.</p>
         </div>
         <div class="proof-grid">
           <div><strong>PA</strong><span>licensed &amp; insured</span></div>
@@ -792,11 +909,23 @@ function page(site) {
           <article><h3>How to get quoted</h3><p>Call ${phone} or submit the estimate form with the project address, service needed, preferred timing, and notes about exterior areas, rooms, drywall, trim, or colors.</p></article>
         </div>
       </section>
+      <section class="section local-proof" aria-labelledby="local-proof-title">
+        <div class="section-heading">
+          <p class="eyebrow">Local signals</p>
+          <h2 id="local-proof-title">Why this ${esc(site.shortPlace)} painting page is locally specific</h2>
+          <p>The page connects the painting services to actual ${esc(site.shortPlace)}-area roads, neighborhoods, surfaces, and estimate intent instead of relying only on generic painter keywords.</p>
+        </div>
+        <div class="proof-notes">
+          <article><h3>Local context</h3><p>${esc(site.localProof)}.</p></article>
+          <article><h3>Nearby landmarks</h3><p>${esc(site.landmarks.join(", "))} are included as practical service-area context for homeowners and search engines.</p></article>
+          <article><h3>Service pages</h3><p>${serviceLinks(site)}</p></article>
+        </div>
+      </section>
       <section class="section services" id="services">
         <div class="section-heading">
           <p class="eyebrow">Painting services</p>
           <h2>Residential and commercial painters for ${esc(site.shortPlace)}-area properties</h2>
-          <p>Each section supports high-intent local searches like exterior painter ${esc(site.shortPlace)} PA, ${esc(site.shortPlace)} painters, house painter ${esc(site.place)} PA, interior painting ${esc(nearby[0])}, and ${esc(site.county)} painting contractors.</p>
+          <p>Each section supports high-intent local searches like exterior painter ${esc(site.shortPlace)} PA, ${esc(site.shortPlace)} painters, house painter ${esc(site.place)} PA, interior painting ${esc(nearby[0])}, and ${esc(site.county)} painting contractors. Dedicated service pages are available for ${serviceLinks(site)}.</p>
         </div>
         <div class="service-grid">
           <article><img src="${images.exterior}" alt="Exterior house painting project near ${esc(site.shortPlace)} PA"><h3>Exterior Painting</h3><p>Weather-aware exterior painting for siding, trim, shutters, doors, porches, railings, and curb appeal improvements across ${esc(site.place)} and nearby communities. Ask about 10% off qualifying exterior painting projects.</p></article>
@@ -936,6 +1065,146 @@ function page(site) {
 `;
 }
 
+function servicePage(site, service) {
+  const title = `${service.title} in ${site.shortPlace}, PA | ${site.brand}`;
+  const description = `${service.title} in ${site.shortPlace}, PA. ${service.summary} Local estimates near ${site.nearby.slice(0, 3).join(", ")}.`;
+  const relatedServices = servicePages
+    .filter((item) => item.slug !== service.slug)
+    .map((item) => `<a href="/${item.slug}">${esc(item.title)}</a>`)
+    .join(" ");
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `https://${site.domain}/${service.slug}#webpage`,
+        url: `https://${site.domain}/${service.slug}`,
+        name: title,
+        description,
+        isPartOf: { "@id": `https://${site.domain}/#website` },
+        about: { "@id": `https://${site.domain}/${service.slug}#service` },
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://${site.domain}/${service.slug}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: site.brand, item: `https://${site.domain}/` },
+          { "@type": "ListItem", position: 2, name: service.title, item: `https://${site.domain}/${service.slug}` },
+        ],
+      },
+      {
+        "@type": "Service",
+        "@id": `https://${site.domain}/${service.slug}#service`,
+        name: `${service.title} in ${site.shortPlace}, PA`,
+        serviceType: service.serviceType,
+        description: `${service.summary} Available around ${site.place}, ${site.nearby.slice(0, 6).join(", ")}, and ${site.county}.`,
+        provider: { "@id": `https://${site.domain}/#localbusiness` },
+        areaServed: [{ "@type": "City", name: site.place, addressRegion: "PA" }, ...site.nearby.map((name) => ({ "@type": "City", name, addressRegion: "PA" }))],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `https://${site.domain}/${service.slug}#faq`,
+        mainEntity: [
+          { "@type": "Question", name: `Do you offer ${service.title.toLowerCase()} in ${site.shortPlace}?`, acceptedAnswer: { "@type": "Answer", text: `Yes. ${site.brand} supports ${service.title.toLowerCase()} estimate requests in ${site.place}, ${site.nearby.slice(0, 5).join(", ")}, and nearby ${site.county} communities.` } },
+          { "@type": "Question", name: "How do I request an estimate?", acceptedAnswer: { "@type": "Answer", text: `Call ${phone} or use the estimate form on ${site.domain}. Include the project address, timing, surfaces, and any repair or color notes.` } },
+        ],
+      },
+    ],
+  };
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${esc(title)}</title>
+    <meta name="description" content="${esc(description)}">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="geo.region" content="US-PA">
+    <meta name="geo.placename" content="${esc(site.place)}, Pennsylvania">
+    <meta name="ICBM" content="${site.coords}">
+    <link rel="canonical" href="https://${site.domain}/${service.slug}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="${esc(site.brand)}">
+    <meta property="og:title" content="${esc(title)}">
+    <meta property="og:description" content="${esc(description)}">
+    <meta property="og:url" content="https://${site.domain}/${service.slug}">
+    <meta property="og:image" content="${service.image}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/styles.css">
+    ${analyticsScript}
+    <script type="application/ld+json">${JSON.stringify(schema, null, 6)}</script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="${esc(site.brand)} home">
+        <span class="brand-mark" aria-hidden="true">${site.monogram}</span>
+        <span class="brand-text"><strong>${esc(site.brand)}</strong><span>${esc(site.place)}, PA</span></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/#services">Services</a>
+        <a href="/#areas">Areas</a>
+        <a class="phone-link" href="tel:${phoneHref}">${phone}</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="service-title">
+        <div class="hero-media" style="background-image:url('${service.image}')" role="img" aria-label="${esc(service.title)} project photo"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-copy-block">
+            <p class="eyebrow">${esc(site.shortPlace)}, PA ${esc(service.serviceType)}</p>
+            <h1 id="service-title">${esc(service.title)} in ${esc(site.shortPlace)}, PA</h1>
+            <p class="hero-copy">${esc(service.summary)} Estimate requests are available for ${esc(site.place)}, ${esc(site.nearby.slice(0, 6).join(", "))}, and nearby ${esc(site.county)} communities.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="tel:${phoneHref}">Call ${phone}</a>
+              <a class="button secondary" href="/#contact">Request Estimate</a>
+            </div>
+          </div>
+          <div class="estimate-form">
+            <p class="form-kicker">Local service page</p>
+            <h2>${esc(service.title)} estimate details</h2>
+            <p class="form-note">Best for ${esc(service.keywords.join(", "))} searches around ${esc(site.shortPlace)} and nearby towns.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section answer-section">
+        <div class="section-heading">
+          <p class="eyebrow">Service details</p>
+          <h2>${esc(service.serviceType)} for ${esc(site.positioning)}</h2>
+          <p>${esc(site.brand)} connects local homeowners with estimate requests for ${esc(service.title.toLowerCase())}. Local context includes ${esc(site.roads)}, ${esc(site.landmarks.join(", "))}, and surrounding neighborhoods.</p>
+        </div>
+        <div class="answer-grid">
+          <article><h3>Primary service</h3><p>${esc(service.summary)}</p></article>
+          <article><h3>Local coverage</h3><p>${esc(site.place)}, ${esc(site.nearby.join(", "))}, and nearby ${esc(site.county)} communities.</p></article>
+          <article><h3>Project details to include</h3><p>Share the address, surfaces, rooms or exterior areas, preferred timing, repair needs, and color notes.</p></article>
+          <article><h3>Related services</h3><p>${relatedServices}</p></article>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-panel">
+          <div><p class="eyebrow">Free local estimate</p><h2>Request ${esc(service.title.toLowerCase())} pricing near ${esc(site.shortPlace)}</h2><p>Call or send a request with your project address, scope, surface conditions, and timing.</p></div>
+          <div class="contact-card">
+            <a href="tel:${phoneHref}">${phone}</a>
+            <span>${esc(address)}</span>
+            <a class="button primary" href="mailto:${email}?subject=${encodeURIComponent(site.shortPlace + " " + service.title + " Estimate")}">Email Estimate Request</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div><strong>${esc(site.brand)}</strong><p>${esc(site.brand)} is a local marketing website operated by Heritage House Painting. All contact requests, estimates, painting services, and customer communication are handled by Heritage House Painting.</p></div>
+      <div><strong>Heritage House Painting</strong><p>${esc(address)}<br><a href="tel:${phoneHref}">${phone}</a><br><a href="mailto:${email}">${email}</a></p></div>
+      <div><strong>Service areas</strong><p>${esc(site.place)}, ${esc(site.nearby.join(", "))}, and nearby ${esc(site.county)} communities.</p></div>
+      <p class="copyright">&copy; 2026 ${esc(site.brand)}, a marketing site by Heritage House Painting.</p>
+    </footer>
+  </body>
+</html>
+`;
+}
+
 function robots(site) {
   return `User-agent: *
 Allow: /
@@ -960,12 +1229,19 @@ Sitemap: https://${site.domain}/sitemap.xml
 }
 
 function sitemap(site) {
+  const serviceUrls = servicePages.map((service) => `  <url>
+    <loc>https://${site.domain}/${service.slug}</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>${service.image}</image:loc><image:title>${service.title} in ${site.shortPlace}, PA</image:title></image:image>
+  </url>`).join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://${site.domain}/</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>${images.heroInterior}</image:loc><image:title>Dining room interior painting project</image:title></image:image>
@@ -973,6 +1249,7 @@ function sitemap(site) {
     <image:image><image:loc>${images.interior}</image:loc><image:title>Interior house painting project</image:title></image:image>
     <image:image><image:loc>${images.drywall}</image:loc><image:title>Drywall finishing project</image:title></image:image>
   </url>
+${serviceUrls}
 </urlset>
 `;
 }
@@ -985,11 +1262,10 @@ ${site.brand} is a local painting estimate website for homeowners searching for 
 Primary URL: https://${site.domain}/
 
 Primary services:
-- Exterior house painting
-- Interior painting
-- Drywall repair and painting
-- Trim painting and finish work
-- Cabinet painting
+- Exterior house painting: https://${site.domain}/exterior-painting
+- Interior painting: https://${site.domain}/interior-painting
+- Drywall repair and painting: https://${site.domain}/drywall-repair
+- Cabinet and trim painting: https://${site.domain}/cabinet-trim-painting
 - Commercial painting
 - Local painting estimates
 
@@ -1002,6 +1278,12 @@ Primary service area:
 ${site.nearby.map((area) => `- ${area}, PA`).join("\n")}
 - ${site.county}, PA
 
+Local context:
+- Roads and landmarks: ${site.roads}
+- Property types: ${site.positioning}
+- Local proof: ${site.localProof}
+- Nearby landmarks: ${site.landmarks.join(", ")}
+
 Contact:
 - Phone: +1-215-791-4043
 - Email: ${email}
@@ -1013,6 +1295,10 @@ ${site.brand} helps local homeowners request estimates for exterior painting, in
 }
 
 function vercel() {
+  const serviceRewrites = servicePages.map((service) => `    {
+      "source": "/${service.slug}",
+      "destination": "/${service.slug}.html"
+    }`).join(",\n");
   return `{
   "cleanUrls": true,
   "trailingSlash": false,
@@ -1028,6 +1314,7 @@ function vercel() {
     }
   ],
   "rewrites": [
+${serviceRewrites},
     {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
@@ -1044,8 +1331,12 @@ for (const site of sites) {
   const dir = path.join(outRoot, site.folder);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "index.html"), page(site));
+  for (const service of servicePages) {
+    fs.writeFileSync(path.join(dir, `${service.slug}.html`), servicePage(site, service));
+  }
   fs.writeFileSync(path.join(dir, "styles.css"), css(site));
   fs.copyFileSync(path.join(process.cwd(), "analytics.js"), path.join(dir, "analytics.js"));
+  fs.copyFileSync(path.join(process.cwd(), logoFile), path.join(dir, logoFile));
   fs.writeFileSync(path.join(dir, "robots.txt"), robots(site));
   fs.writeFileSync(path.join(dir, "sitemap.xml"), sitemap(site));
   fs.writeFileSync(path.join(dir, "llms.txt"), llms(site));

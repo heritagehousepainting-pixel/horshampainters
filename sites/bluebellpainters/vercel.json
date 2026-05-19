@@ -14,6 +14,22 @@
   ],
   "rewrites": [
     {
+      "source": "/exterior-painting",
+      "destination": "/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "destination": "/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "destination": "/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "destination": "/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }

@@ -5,11 +5,10 @@ Plymouth Meeting Painters is a local painting estimate website for homeowners se
 Primary URL: https://plymouthmeetingpainters.com/
 
 Primary services:
-- Exterior house painting
-- Interior painting
-- Drywall repair and painting
-- Trim painting and finish work
-- Cabinet painting
+- Exterior house painting: https://plymouthmeetingpainters.com/exterior-painting
+- Interior painting: https://plymouthmeetingpainters.com/interior-painting
+- Drywall repair and painting: https://plymouthmeetingpainters.com/drywall-repair
+- Cabinet and trim painting: https://plymouthmeetingpainters.com/cabinet-trim-painting
 - Commercial painting
 - Local painting estimates
 
@@ -30,6 +29,12 @@ Primary service area:
 - Worcester Township, PA
 - Whitpain Township, PA
 - Montgomery County, PA
+
+Local context:
+- Roads and landmarks: Germantown Pike, Butler Pike, Chemical Road, Plymouth Road, and the Plymouth Meeting Mall area
+- Property types: residential neighborhoods, townhomes, office properties, and nearby Whitemarsh Township homes
+- Local proof: townhomes, single-family houses, office suites, and exterior projects around Germantown Pike and Chemical Road
+- Nearby landmarks: Plymouth Meeting Mall, Germantown Pike, Chemical Road, Butler Pike, Whitemarsh Township
 
 Contact:
 - Phone: +1-215-791-4043

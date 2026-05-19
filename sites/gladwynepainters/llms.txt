@@ -5,11 +5,10 @@ Gladwyne Painters is a local painting estimate website for homeowners searching 
 Primary URL: https://gladwynepainters.com/
 
 Primary services:
-- Exterior house painting
-- Interior painting
-- Drywall repair and painting
-- Trim painting and finish work
-- Cabinet painting
+- Exterior house painting: https://gladwynepainters.com/exterior-painting
+- Interior painting: https://gladwynepainters.com/interior-painting
+- Drywall repair and painting: https://gladwynepainters.com/drywall-repair
+- Cabinet and trim painting: https://gladwynepainters.com/cabinet-trim-painting
 - Commercial painting
 - Local painting estimates
 
@@ -30,6 +29,12 @@ Primary service area:
 - Penn Valley, PA
 - Merion Station, PA
 - Montgomery County, PA
+
+Local context:
+- Roads and landmarks: Youngs Ford Road, Conshohocken State Road, Waverly Road, and the Lower Merion Main Line
+- Property types: Main Line estates, historic homes, stone houses, and luxury residential properties
+- Local proof: Main Line estates, historic stone homes, detailed millwork, and exterior trim where finish quality is highly visible
+- Nearby landmarks: Youngs Ford Road, Conshohocken State Road, Lower Merion Township, Waverly Road, Bryn Mawr
 
 Contact:
 - Phone: +1-215-791-4043

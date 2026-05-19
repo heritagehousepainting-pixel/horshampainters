@@ -5,11 +5,10 @@ Lower Gwynedd Painters is a local painting estimate website for homeowners searc
 Primary URL: https://lowergwyneddpainters.com/
 
 Primary services:
-- Exterior house painting
-- Interior painting
-- Drywall repair and painting
-- Trim painting and finish work
-- Cabinet painting
+- Exterior house painting: https://lowergwyneddpainters.com/exterior-painting
+- Interior painting: https://lowergwyneddpainters.com/interior-painting
+- Drywall repair and painting: https://lowergwyneddpainters.com/drywall-repair
+- Cabinet and trim painting: https://lowergwyneddpainters.com/cabinet-trim-painting
 - Commercial painting
 - Local painting estimates
 
@@ -30,6 +29,12 @@ Primary service area:
 - Fort Washington, PA
 - North Wales, PA
 - Montgomery County, PA
+
+Local context:
+- Roads and landmarks: Bethlehem Pike, Sumneytown Pike, Welsh Road, Penllyn Blue Bell Pike, and Spring House village
+- Property types: township homes, established neighborhoods, and premium Montgomery County properties
+- Local proof: large lots, mature landscaping, and township homes where exterior prep, clean edges, and schedule communication matter
+- Nearby landmarks: Spring House Village, Gwynedd Valley, Penllyn, Bethlehem Pike, Lower Gwynedd Township
 
 Contact:
 - Phone: +1-215-791-4043

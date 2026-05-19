@@ -5,11 +5,10 @@ Ardmore Painters is a local painting estimate website for homeowners searching f
 Primary URL: https://ardmorepainters.com/
 
 Primary services:
-- Exterior house painting
-- Interior painting
-- Drywall repair and painting
-- Trim painting and finish work
-- Cabinet painting
+- Exterior house painting: https://ardmorepainters.com/exterior-painting
+- Interior painting: https://ardmorepainters.com/interior-painting
+- Drywall repair and painting: https://ardmorepainters.com/drywall-repair
+- Cabinet and trim painting: https://ardmorepainters.com/cabinet-trim-painting
 - Commercial painting
 - Local painting estimates
 
@@ -30,6 +29,12 @@ Primary service area:
 - Villanova, PA
 - Bala Cynwyd, PA
 - Montgomery County, PA
+
+Local context:
+- Roads and landmarks: Lancaster Avenue, Ardmore Avenue, Montgomery Avenue, Haverford Road, and Suburban Square
+- Property types: Main Line homes, twin homes, stone houses, retail spaces, and Lower Merion properties
+- Local proof: Main Line twins, stone homes, retail spaces, row homes, and Lower Merion interiors close to Lancaster Avenue
+- Nearby landmarks: Suburban Square, Lancaster Avenue, Lower Merion Township, Ardmore Avenue, Haverford Township
 
 Contact:
 - Phone: +1-215-791-4043

@@ -54,6 +54,46 @@
       "destination": "/sites/lowergwyneddpainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -104,6 +144,46 @@
       "destination": "/sites/lowergwyneddpainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -154,6 +234,46 @@
       "destination": "/sites/amblerpainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -204,6 +324,46 @@
       "destination": "/sites/amblerpainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -254,6 +414,46 @@
       "destination": "/sites/bluebellpainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -304,6 +504,46 @@
       "destination": "/sites/bluebellpainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -354,6 +594,46 @@
       "destination": "/sites/lafayettehillpainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -404,6 +684,46 @@
       "destination": "/sites/lafayettehillpainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -454,6 +774,46 @@
       "destination": "/sites/plymouthmeetingpainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -504,6 +864,46 @@
       "destination": "/sites/plymouthmeetingpainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -554,6 +954,46 @@
       "destination": "/sites/gladwynepainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -604,6 +1044,46 @@
       "destination": "/sites/gladwynepainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -654,6 +1134,46 @@
       "destination": "/sites/waynepainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -704,6 +1224,46 @@
       "destination": "/sites/waynepainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -754,6 +1314,46 @@
       "destination": "/sites/ardmorepainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -804,6 +1404,46 @@
       "destination": "/sites/ardmorepainters/llms.txt"
     },
     {
+      "source": "/exterior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/cabinet-trim-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -812,6 +1452,22 @@
         }
       ],
       "destination": "/sites/ardmorepainters/index.html"
+    },
+    {
+      "source": "/exterior-painting",
+      "destination": "/exterior-painting.html"
+    },
+    {
+      "source": "/interior-painting",
+      "destination": "/interior-painting.html"
+    },
+    {
+      "source": "/drywall-repair",
+      "destination": "/drywall-repair.html"
+    },
+    {
+      "source": "/cabinet-trim-painting",
+      "destination": "/cabinet-trim-painting.html"
     },
     {
       "source": "/((?!api/|assets/|styles.css|analytics.js|horsham-painters-logo(?:-cropped)?\\.png|robots.txt|sitemap.xml|llms.txt).*)",

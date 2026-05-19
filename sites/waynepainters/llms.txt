@@ -5,11 +5,10 @@ Wayne Painters is a local painting estimate website for homeowners searching for
 Primary URL: https://waynepainters.com/
 
 Primary services:
-- Exterior house painting
-- Interior painting
-- Drywall repair and painting
-- Trim painting and finish work
-- Cabinet painting
+- Exterior house painting: https://waynepainters.com/exterior-painting
+- Interior painting: https://waynepainters.com/interior-painting
+- Drywall repair and painting: https://waynepainters.com/drywall-repair
+- Cabinet and trim painting: https://waynepainters.com/cabinet-trim-painting
 - Commercial painting
 - Local painting estimates
 
@@ -30,6 +29,12 @@ Primary service area:
 - Ardmore, PA
 - Paoli, PA
 - Delaware County, PA
+
+Local context:
+- Roads and landmarks: Lancaster Avenue, Wayne Avenue, Conestoga Road, North Wayne Avenue, and Radnor Township neighborhoods
+- Property types: Main Line homes, Radnor Township properties, historic houses, and professional spaces
+- Local proof: Radnor Township homes, Main Line interiors, exterior trim, shutters, and Lancaster Avenue-area commercial spaces
+- Nearby landmarks: Lancaster Avenue, Radnor Township, Wayne Avenue, St. Davids, North Wayne
 
 Contact:
 - Phone: +1-215-791-4043

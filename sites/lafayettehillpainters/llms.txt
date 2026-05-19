@@ -5,11 +5,10 @@ Lafayette Hill Painters is a local painting estimate website for homeowners sear
 Primary URL: https://lafayettehillpainters.com/
 
 Primary services:
-- Exterior house painting
-- Interior painting
-- Drywall repair and painting
-- Trim painting and finish work
-- Cabinet painting
+- Exterior house painting: https://lafayettehillpainters.com/exterior-painting
+- Interior painting: https://lafayettehillpainters.com/interior-painting
+- Drywall repair and painting: https://lafayettehillpainters.com/drywall-repair
+- Cabinet and trim painting: https://lafayettehillpainters.com/cabinet-trim-painting
 - Commercial painting
 - Local painting estimates
 
@@ -30,6 +29,12 @@ Primary service area:
 - Wyndmoor, PA
 - Erdenheim, PA
 - Montgomery County, PA
+
+Local context:
+- Roads and landmarks: Germantown Pike, Joshua Road, Ridge Pike, Harts Lane, and Barren Hill Road
+- Property types: Whitemarsh Township homes, stone houses, townhomes, and local commercial spaces
+- Local proof: stone homes, Whitemarsh Township interiors, porch railings, shutters, and exterior trim close to Germantown Pike
+- Nearby landmarks: Germantown Pike, Barren Hill, Whitemarsh Township, Joshua Road, Chestnut Hill
 
 Contact:
 - Phone: +1-215-791-4043
