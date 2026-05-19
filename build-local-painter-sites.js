@@ -6,6 +6,7 @@ const phone = "(215) 791-4043";
 const phoneHref = "+12157914043";
 const email = "heritagehousepainting@gmail.com";
 const address = "4001 1st Ave, Lafayette Hill, PA 19444";
+const analyticsScript = '<script defer src="/analytics.js" data-posthog-key="phc_AnJ7YEniPw5kv7NrfxB9gQLQ4RpqLWu6vkGASD3FVejB" data-posthog-host="https://us.i.posthog.com"></script>';
 
 const images = {
   heroInterior: "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/c9aa5163-aece-42eb-ffa6-ad2e89dfce00/public",
@@ -698,6 +699,7 @@ function page(site) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    ${analyticsScript}
     <script type="application/ld+json">${JSON.stringify(schema, null, 6)}</script>
   </head>
   <body>
@@ -1027,7 +1029,7 @@ function vercel() {
   ],
   "rewrites": [
     {
-      "source": "/((?!api/|styles.css|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }
   ]
@@ -1043,6 +1045,7 @@ for (const site of sites) {
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "index.html"), page(site));
   fs.writeFileSync(path.join(dir, "styles.css"), css(site));
+  fs.copyFileSync(path.join(process.cwd(), "analytics.js"), path.join(dir, "analytics.js"));
   fs.writeFileSync(path.join(dir, "robots.txt"), robots(site));
   fs.writeFileSync(path.join(dir, "sitemap.xml"), sitemap(site));
   fs.writeFileSync(path.join(dir, "llms.txt"), llms(site));
