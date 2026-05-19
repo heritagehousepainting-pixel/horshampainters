@@ -317,6 +317,10 @@ function estimateForm(site) {
           </form>`;
 }
 
+function img(src, alt) {
+  return `<img src="${src}" alt="${esc(alt)}" loading="lazy" decoding="async" width="1200" height="900">`;
+}
+
 function css(site) {
   return `:root {
   color-scheme: light;
@@ -336,7 +340,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
 }
 img { display: block; height: auto; max-width: 100%; }
@@ -362,13 +366,13 @@ a { color: inherit; }
   color: var(--navy);
   display: inline-flex;
   flex: 0 0 58px;
-  font-family: Poppins, system-ui, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 1.15rem;
   font-weight: 800;
   height: 58px;
   justify-content: center;
 }
-.brand-text strong { color: #fff; display: block; font-family: Poppins, system-ui, sans-serif; font-size: 1.04rem; line-height: 1.1; }
+.brand-text strong { color: #fff; display: block; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1.04rem; line-height: 1.1; }
 .brand-text span { color: rgba(255, 255, 255, 0.74); display: block; font-size: 0.82rem; margin-top: 3px; }
 nav { align-items: center; display: flex; gap: 22px; font-size: 0.94rem; font-weight: 700; justify-content: flex-end; }
 nav a { color: #fff; text-decoration: none; }
@@ -426,12 +430,12 @@ nav a { color: #fff; text-decoration: none; }
   padding: 11px clamp(20px, 6vw, 86px);
   text-align: center;
 }
-.promo-banner strong { font-family: Poppins, system-ui, sans-serif; font-size: 0.94rem; line-height: 1.2; text-transform: uppercase; }
+.promo-banner strong { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 0.94rem; line-height: 1.2; text-transform: uppercase; }
 .promo-banner span { font-weight: 700; line-height: 1.25; }
 .promo-banner a {
   border: 1px solid rgba(10, 22, 40, 0.34);
   border-radius: 8px;
-  font-family: Poppins, system-ui, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.86rem;
   font-weight: 800;
   line-height: 1.1;
@@ -465,7 +469,7 @@ nav a { color: #fff; text-decoration: none; }
   margin: 0 0 14px;
   text-transform: uppercase;
 }
-h1, h2 { font-family: Poppins, system-ui, sans-serif; letter-spacing: 0; line-height: 1.12; margin: 0; }
+h1, h2 { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 0; line-height: 1.12; margin: 0; }
 h1 { font-size: clamp(2.35rem, 5.2vw, 4.65rem); font-weight: 800; max-width: 760px; text-wrap: balance; }
 h2 { font-size: clamp(2rem, 4vw, 3.6rem); font-weight: 800; text-wrap: balance; }
 h3 { font-size: 1.18rem; line-height: 1.2; margin: 0 0 10px; text-wrap: balance; }
@@ -476,7 +480,7 @@ p { margin: 0; overflow-wrap: break-word; }
   align-items: center;
   border-radius: 8px;
   display: inline-flex;
-  font-family: Poppins, system-ui, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 700;
   justify-content: center;
   min-height: 48px;
@@ -572,7 +576,7 @@ p { margin: 0; overflow-wrap: break-word; }
   padding: 22px;
 }
 .proof-notes article { background: #fff; }
-.answer-grid h3, .proof-notes h3, .township-grid h3 { color: var(--navy); font-family: Poppins, system-ui, sans-serif; font-size: 1.06rem; }
+.answer-grid h3, .proof-notes h3, .township-grid h3 { color: var(--navy); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1.06rem; }
 .answer-grid p, .proof-notes p, .township-grid p, .service-grid article p { color: var(--muted); }
 .proof-notes a { color: var(--blue); display: inline-block; font-weight: 800; margin: 0 10px 8px 0; text-underline-offset: 0.18em; }
 .section-heading { align-items: center; display: flex; flex-direction: column; margin: 0 auto 42px; max-width: 920px; text-align: center; width: 100%; }
@@ -624,7 +628,7 @@ p { margin: 0; overflow-wrap: break-word; }
 }
 .nearby-links h3 {
   color: #fff;
-  font-family: Poppins, system-ui, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 1.08rem;
   line-height: 1.25;
   margin: 0 0 8px;
@@ -648,9 +652,7 @@ p { margin: 0; overflow-wrap: break-word; }
 .faq summary { cursor: pointer; font-weight: 800; line-height: 1.3; text-wrap: balance; }
 .faq details p { margin-top: 12px; }
 .contact {
-  background-image: linear-gradient(90deg, rgba(11, 31, 53, 0.88), rgba(11, 31, 53, 0.58)), url("${images.contact}");
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(135deg, rgba(11, 31, 53, 0.98), rgba(26, 72, 112, 0.94));
   color: #fff;
   padding: clamp(64px, 9vw, 112px) clamp(20px, 6vw, 86px);
   scroll-margin-top: 92px;
@@ -905,9 +907,7 @@ function page(site) {
     <meta name="twitter:image:alt" content="Finished house painting project by ${esc(site.brand)}">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <link rel="preconnect" href="https://imagedelivery.net">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="${images.heroInterior}" fetchpriority="high">
     <link rel="stylesheet" href="styles.css">
     ${analyticsScript}
     <script type="application/ld+json">${JSON.stringify(schema, null, 6)}</script>
@@ -991,9 +991,9 @@ function page(site) {
           <p>Each section supports high-intent local searches like exterior painter ${esc(site.shortPlace)} PA, ${esc(site.shortPlace)} painters, house painter ${esc(site.place)} PA, interior painting ${esc(nearby[0])}, and ${esc(site.county)} painting contractors. Dedicated service pages are available for ${serviceLinks(site)}.</p>
         </div>
         <div class="service-grid">
-          <article><img src="${images.exterior}" alt="Exterior house painting project near ${esc(site.shortPlace)} PA"><h3>Exterior Painting</h3><p>Weather-aware exterior painting for siding, trim, shutters, doors, porches, railings, and curb appeal improvements across ${esc(site.place)} and nearby communities. Ask about 10% off qualifying exterior painting projects.</p></article>
-          <article><img src="${images.interior}" alt="Interior house painting project near ${esc(site.shortPlace)} PA"><h3>Interior Painting</h3><p>Careful prep, crisp lines, smooth wall finishes, and premium coatings for bedrooms, kitchens, living rooms, stairways, and whole-home repaints in ${esc(site.shortPlace)}, ${esc(nearby.slice(0, 5).join(", "))}.</p></article>
-          <article><img src="${images.drywall}" alt="Drywall finishing and painting project near ${esc(site.shortPlace)} PA"><h3>Drywall, Trim &amp; Finishes</h3><p>Drywall repair, patching, finish trim, carpentry touch-ups, cabinet painting, and specialty finishes for homes in ${esc(site.place)}, ${esc(nearby.slice(0, 4).join(", "))}, and nearby neighborhoods.</p></article>
+          <article>${img(images.exterior, `Exterior house painting project near ${site.shortPlace} PA`)}<h3>Exterior Painting</h3><p>Weather-aware exterior painting for siding, trim, shutters, doors, porches, railings, and curb appeal improvements across ${esc(site.place)} and nearby communities. Ask about 10% off qualifying exterior painting projects.</p></article>
+          <article>${img(images.interior, `Interior house painting project near ${site.shortPlace} PA`)}<h3>Interior Painting</h3><p>Careful prep, crisp lines, smooth wall finishes, and premium coatings for bedrooms, kitchens, living rooms, stairways, and whole-home repaints in ${esc(site.shortPlace)}, ${esc(nearby.slice(0, 5).join(", "))}.</p></article>
+          <article>${img(images.drywall, `Drywall finishing and painting project near ${site.shortPlace} PA`)}<h3>Drywall, Trim &amp; Finishes</h3><p>Drywall repair, patching, finish trim, carpentry touch-ups, cabinet painting, and specialty finishes for homes in ${esc(site.place)}, ${esc(nearby.slice(0, 4).join(", "))}, and nearby neighborhoods.</p></article>
         </div>
       </section>
       <section class="section project-photos" aria-labelledby="project-photos-title">
@@ -1003,10 +1003,10 @@ function page(site) {
           <p>These images use real project photography from the painting portfolio, not stock photo libraries.</p>
         </div>
         <div class="photo-grid">
-          <figure><img src="${images.heroInterior}" alt="Finished dining room interior painting project"><figcaption>Dining Room Interior Painting</figcaption></figure>
-          <figure><img src="${images.bedroom}" alt="Bedroom interior painting project"><figcaption>Bedroom Painting</figcaption></figure>
-          <figure><img src="${images.bath}" alt="Bathroom painting and renovation project"><figcaption>Bathroom Painting</figcaption></figure>
-          <figure><img src="${images.exterior2}" alt="Exterior residential painting project"><figcaption>Exterior House Painting</figcaption></figure>
+          <figure>${img(images.heroInterior, "Finished dining room interior painting project")}<figcaption>Dining Room Interior Painting</figcaption></figure>
+          <figure>${img(images.bedroom, "Bedroom interior painting project")}<figcaption>Bedroom Painting</figcaption></figure>
+          <figure>${img(images.bath, "Bathroom painting and renovation project")}<figcaption>Bathroom Painting</figcaption></figure>
+          <figure>${img(images.exterior2, "Exterior residential painting project")}<figcaption>Exterior House Painting</figcaption></figure>
         </div>
       </section>
       <section class="section local" id="areas">
@@ -1189,6 +1189,8 @@ function servicePage(site, service) {
     <meta property="og:url" content="https://${site.domain}/${service.slug}">
     <meta property="og:image" content="${service.image}">
     <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://imagedelivery.net">
+    <link rel="preload" as="image" href="${service.image}" fetchpriority="high">
     <link rel="stylesheet" href="/styles.css">
     ${analyticsScript}
     <script type="application/ld+json">${JSON.stringify(schema, null, 6)}</script>
