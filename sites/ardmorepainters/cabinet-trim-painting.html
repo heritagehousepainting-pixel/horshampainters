@@ -121,6 +121,23 @@
                               "name": "Bala Cynwyd",
                               "addressRegion": "PA"
                         }
+                  ],
+                  "subjectOf": [
+                        {
+                              "@type": "ImageObject",
+                              "url": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/bc3c2290-b882-4909-c275-9a3e59823200/public",
+                              "caption": "Ardmore Dining Room Painting"
+                        },
+                        {
+                              "@type": "ImageObject",
+                              "url": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/c9aa5163-aece-42eb-ffa6-ad2e89dfce00/public",
+                              "caption": "Professional Dining Room Interior Painting"
+                        },
+                        {
+                              "@type": "ImageObject",
+                              "url": "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/a577b56e-7ff7-4517-9904-3daf99c2a000/public",
+                              "caption": "Wayne Bathroom Wallpaper & Painting"
+                        }
                   ]
             },
             {
@@ -204,14 +221,60 @@
           <article><h3>Related services</h3><p><a href="/exterior-painting">Exterior Painting</a> <a href="/interior-painting">Interior Painting</a> <a href="/drywall-repair">Drywall Repair &amp; Painting</a></p></article>
         </div>
       </section>
+      <section class="section service-proof" aria-labelledby="service-proof-title">
+        <div class="section-heading">
+          <p class="eyebrow">Painting &amp; drywall work near Ardmore</p>
+          <h2 id="service-proof-title">Cabinet &amp; Trim Painting proof from Heritage House Painting</h2>
+          <p>Project photography and customer feedback from Heritage House Painting gives this Ardmore service page real-world context beyond generic service descriptions.</p>
+        </div>
+        <div class="photo-grid">
+          <figure><img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/bc3c2290-b882-4909-c275-9a3e59823200/public" alt="Heritage House Painting Ardmore dining room painting project shown for Ardmore-area homeowners" loading="lazy" decoding="async" width="1200" height="900"><figcaption>Ardmore Dining Room Painting</figcaption></figure>
+          <figure><img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/c9aa5163-aece-42eb-ffa6-ad2e89dfce00/public" alt="Heritage House Painting dining room interior painting project shown for Ardmore-area homeowners" loading="lazy" decoding="async" width="1200" height="900"><figcaption>Professional Dining Room Interior Painting</figcaption></figure>
+          <figure><img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/a577b56e-7ff7-4517-9904-3daf99c2a000/public" alt="Heritage House Painting Wayne bathroom wallpaper and painting project shown for Ardmore-area homeowners" loading="lazy" decoding="async" width="1200" height="900"><figcaption>Wayne Bathroom Wallpaper &amp; Painting</figcaption></figure>
+        </div>
+        <div class="testimonial-grid" aria-label="Feedback from Heritage House Painting customers">
+          <article>
+            <p>&ldquo;Heritage House Painting transformed our home beyond our wildest dreams. The attention to detail and craftsmanship is absolutely exceptional. Every room feels like a work of art.&rdquo;</p>
+            <strong>Sarah &amp; Michael</strong>
+            <span>Blue Bell, PA</span>
+          </article>
+          <article>
+            <p>&ldquo;Professional, reliable, and incredibly talented. The color consultation process helped us find the perfect palette. Our Wayne home now feels like a luxury retreat.&rdquo;</p>
+            <strong>Jennifer</strong>
+            <span>Wayne, PA</span>
+          </article>
+        </div>
+      </section>
       <section class="contact" id="contact">
         <div class="contact-panel">
           <div><p class="eyebrow">Free local estimate</p><h2>Request cabinet &amp; trim painting pricing near Ardmore</h2><p>Call or send a request with your project address, scope, surface conditions, and timing.</p></div>
-          <div class="contact-card">
-            <a href="tel:+12157914043">(215) 791-4043</a>
-            <span>4001 1st Ave, Lafayette Hill, PA 19444</span>
-            <a class="button primary" href="mailto:heritagehousepainting@gmail.com?subject=Ardmore%20Cabinet%20%26%20Trim%20Painting%20Estimate">Email Estimate Request</a>
-          </div>
+          <form class="estimate-form" action="/api/estimate" method="POST" aria-label="Request a painting estimate">
+            <input type="hidden" name="_subject" value="New Ardmore Painters Estimate Request">
+            <input type="hidden" name="Marketing site" value="ardmorepainters.com">
+            <input type="hidden" name="Seasonal offer" value="10% off qualifying exterior painting projects">
+            <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <p class="form-kicker">Free Estimate</p>
+            <h2>Request a Ardmore painting quote</h2>
+            <p class="form-note">Tell us about your project and ask about the seasonal exterior painting discount.</p>
+            <div class="form-grid">
+              <label>Full Name<input type="text" name="Full name" autocomplete="name" required></label>
+              <label>Phone<input type="tel" name="Phone" autocomplete="tel" required></label>
+              <label>Email<input type="email" name="email" autocomplete="email"></label>
+              <label>Project Address<input type="text" name="Project address" autocomplete="street-address" placeholder="Ardmore, PA" required></label>
+              <label class="full">Service Needed<select name="Service needed" required>
+                <option value="">Choose a service</option>
+                <option>Exterior painting - 10% seasonal offer</option>
+                <option>Interior painting</option>
+                <option>Drywall repair</option>
+                <option>Trim, carpentry, or cabinets</option>
+                <option>Commercial painting</option>
+              </select></label>
+              <label class="full">Project Details<textarea name="Project details" rows="4" placeholder="Tell us about the exterior areas, rooms, timing, or colors you have in mind."></textarea></label>
+            </div>
+            <button class="button primary form-submit" type="submit">Send Estimate Request</button>
+            <p class="form-disclaimer">Free local estimates for Ardmore-area painting projects. Exterior offer applies to qualifying projects.</p>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
         </div>
       </section>
     </main>
@@ -221,5 +284,55 @@
       <div><strong>Service areas</strong><p>Ardmore, Lower Merion Township, Haverford Township, Bryn Mawr, Wynnewood, Narberth, Havertown, Gladwyne, Merion Station, Villanova, Bala Cynwyd, and nearby Montgomery County communities.</p></div>
       <p class="copyright">&copy; 2026 Ardmore Painters, a marketing site by Heritage House Painting.</p>
     </footer>
+    <script>
+      document.querySelectorAll(".estimate-form").forEach((form) => {
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const button = form.querySelector(".form-submit");
+          const status = form.querySelector(".form-status");
+          const originalText = button ? button.textContent : "Send Estimate Request";
+
+          if (status) {
+            status.textContent = "Sending your request...";
+            status.dataset.state = "pending";
+          }
+          if (button) {
+            button.disabled = true;
+            button.textContent = "Sending...";
+          }
+
+          try {
+            const formData = new FormData(form);
+            const payload = Object.fromEntries(formData.entries());
+            const response = await fetch(form.action, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            });
+            const result = await response.json().catch(() => ({}));
+
+            if (!response.ok || !result.ok) {
+              throw new Error(result.error || "Submission failed");
+            }
+
+            form.reset();
+            if (status) {
+              status.textContent = "Thanks. Your estimate request was sent.";
+              status.dataset.state = "success";
+            }
+          } catch (error) {
+            if (status) {
+              status.textContent = "Sorry, the request could not be sent. Please call (215) 791-4043.";
+              status.dataset.state = "error";
+            }
+          } finally {
+            if (button) {
+              button.disabled = false;
+              button.textContent = originalText;
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>

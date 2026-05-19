@@ -22,6 +22,186 @@ const images = {
   contact: "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2018605b-e120-4b3f-584a-94d0ec079100/public",
 };
 
+const heritageProjectPhotos = {
+  diningRoom: {
+    src: images.heroInterior,
+    caption: "Professional Dining Room Interior Painting",
+    alt: "Heritage House Painting dining room interior painting project",
+    services: ["interior-painting", "cabinet-trim-painting"],
+  },
+  amblerInterior: {
+    src: images.interior,
+    caption: "Ambler Interior Painting",
+    alt: "Heritage House Painting Ambler interior painting project",
+    services: ["interior-painting", "cabinet-trim-painting"],
+  },
+  montgomeryExterior: {
+    src: images.exterior,
+    caption: "Montgomery County Exterior Painting",
+    alt: "Heritage House Painting Montgomery County exterior painting project",
+    services: ["exterior-painting"],
+  },
+  restaurantInterior: {
+    src: images.contact,
+    caption: "Restaurant Interior Painting",
+    alt: "Heritage House Painting restaurant interior painting project",
+    services: ["interior-painting", "cabinet-trim-painting"],
+  },
+  ardmoreDining: {
+    src: images.exterior2,
+    caption: "Ardmore Dining Room Painting",
+    alt: "Heritage House Painting Ardmore dining room painting project",
+    services: ["interior-painting", "cabinet-trim-painting"],
+  },
+  wayneBathroom: {
+    src: images.bath,
+    caption: "Wayne Bathroom Wallpaper & Painting",
+    alt: "Heritage House Painting Wayne bathroom wallpaper and painting project",
+    services: ["interior-painting", "cabinet-trim-painting"],
+  },
+  blueBellBedroom: {
+    src: images.bedroom,
+    caption: "Blue Bell Bedroom Transformation",
+    alt: "Heritage House Painting Blue Bell bedroom painting project",
+    services: ["interior-painting", "cabinet-trim-painting"],
+  },
+  blueBellDrywall: {
+    src: images.drywall,
+    caption: "Blue Bell Drywall Installation",
+    alt: "Heritage House Painting Blue Bell drywall installation project",
+    services: ["drywall-repair", "interior-painting"],
+  },
+  lowerGwyneddDrywall: {
+    src: "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/1665ad3c-de70-49ef-c518-baddb10b7800/publicContain",
+    caption: "Lower Gwynedd Drywall Installation",
+    alt: "Heritage House Painting Lower Gwynedd drywall installation project",
+    services: ["drywall-repair"],
+  },
+  wayneDrywall: {
+    src: "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/b8ce02f0-bd5b-43ef-ed95-bd677194ca00/public",
+    caption: "Wayne Drywall Installation",
+    alt: "Heritage House Painting Wayne drywall installation project",
+    services: ["drywall-repair"],
+  },
+  blueBellExterior: {
+    src: images.blueBellExterior,
+    caption: "Blue Bell Exterior Painting",
+    alt: "Heritage House Painting Blue Bell exterior painting project",
+    services: ["exterior-painting"],
+  },
+  commercialRestaurant: {
+    src: "https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/5a3bdb8c-b797-48c5-8a79-454270e3c800/public",
+    caption: "Commercial Restaurant Painting",
+    alt: "Heritage House Painting commercial restaurant painting project",
+    services: ["exterior-painting", "interior-painting"],
+  },
+};
+
+const heritageTestimonials = {
+  blueBellHome: {
+    quote: "From the initial consultation to project completion, Heritage House Painting delivered exceptional service. Their team painted our entire Blue Bell home - both interior and exterior - with remarkable skill and efficiency.",
+    name: "Jennifer L.",
+    context: "Blue Bell, PA / Complete Home Painting",
+    services: ["exterior-painting", "interior-painting"],
+  },
+  blueBellCraft: {
+    quote: "Heritage House Painting transformed our home beyond our wildest dreams. The attention to detail and craftsmanship is absolutely exceptional. Every room feels like a work of art.",
+    name: "Sarah & Michael",
+    context: "Blue Bell, PA",
+    services: ["interior-painting", "cabinet-trim-painting"],
+  },
+  wayneInterior: {
+    quote: "Heritage House Painting transformed our Wayne home with exceptional interior painting. Their attention to detail and use of premium materials exceeded our expectations. The team was professional, clean, and completed the project on time.",
+    name: "Sarah M.",
+    context: "Wayne, PA / Interior Painting",
+    services: ["interior-painting"],
+  },
+  waynePalette: {
+    quote: "Professional, reliable, and incredibly talented. The color consultation process helped us find the perfect palette. Our Wayne home now feels like a luxury retreat.",
+    name: "Jennifer",
+    context: "Wayne, PA",
+    services: ["interior-painting", "cabinet-trim-painting"],
+  },
+  ardmoreExterior: {
+    quote: "Outstanding exterior house painting service in Ardmore! The Heritage team gave our historic home a beautiful makeover while respecting its architectural character. Highly recommend their expertise for Main Line properties.",
+    name: "Michael R.",
+    context: "Ardmore, PA / Exterior Painting",
+    services: ["exterior-painting"],
+  },
+  ardmoreWalkthrough: {
+    quote: "From initial consultation to final walkthrough, everything was handled with utmost professionalism. The exterior transformation of our Ardmore home is stunning.",
+    name: "David & Lisa",
+    context: "Ardmore, PA",
+    services: ["exterior-painting"],
+  },
+  lowerGwyneddCabinet: {
+    quote: "Excellent kitchen cabinet painting in Lower Gwynedd! Heritage House Painting transformed our dated cabinets into a modern masterpiece. The color consultation service was invaluable in achieving the perfect look.",
+    name: "David K.",
+    context: "Lower Gwynedd, PA / Cabinet Painting",
+    services: ["cabinet-trim-painting"],
+  },
+  amblerCommercial: {
+    quote: "Outstanding commercial painting project in Ambler! Heritage House Painting handled our office renovation with professionalism and minimal disruption to our business operations. Highly recommend for commercial properties.",
+    name: "Robert T.",
+    context: "Ambler, PA / Commercial Painting",
+    services: ["interior-painting", "exterior-painting"],
+  },
+  lafayetteDrywall: {
+    quote: "The team at Heritage House Painting did an outstanding job repairing and finishing our drywall after water damage. Their attention to detail was impressive, and they matched our existing texture perfectly. The crew was professional, clean, and completed the work on schedule.",
+    name: "Michael Thompson",
+    context: "Lafayette Hill, PA / Drywall",
+    services: ["drywall-repair"],
+  },
+};
+
+const siteProof = {
+  horshampainters: {
+    photos: ["montgomeryExterior", "blueBellDrywall", "blueBellExterior", "diningRoom"],
+    testimonials: ["blueBellHome", "lafayetteDrywall", "wayneInterior"],
+    note: "Heritage House Painting project proof from nearby Montgomery County homes, exterior work, drywall finishing, and interiors that match common Horsham-area painting requests.",
+  },
+  lowergwyneddpainters: {
+    photos: ["lowerGwyneddDrywall", "diningRoom", "blueBellBedroom", "montgomeryExterior"],
+    testimonials: ["lowerGwyneddCabinet", "blueBellCraft", "blueBellHome"],
+    note: "Lower Gwynedd homeowners can compare drywall, cabinet, interior, and exterior proof from Heritage House Painting work in and around the same Montgomery County service area.",
+  },
+  amblerpainters: {
+    photos: ["amblerInterior", "restaurantInterior", "diningRoom", "commercialRestaurant"],
+    testimonials: ["amblerCommercial", "blueBellCraft", "lowerGwyneddCabinet"],
+    note: "The Ambler proof mix highlights Heritage House Painting interior and commercial work suited to borough homes, Main Street properties, and nearby office spaces.",
+  },
+  bluebellpainters: {
+    photos: ["blueBellBedroom", "blueBellDrywall", "blueBellExterior", "diningRoom"],
+    testimonials: ["blueBellHome", "blueBellCraft", "lowerGwyneddCabinet"],
+    note: "Blue Bell pages use the strongest local Heritage proof first: Blue Bell bedroom, drywall, exterior, and whole-home customer feedback.",
+  },
+  lafayettehillpainters: {
+    photos: ["diningRoom", "lowerGwyneddDrywall", "restaurantInterior", "montgomeryExterior"],
+    testimonials: ["lafayetteDrywall", "blueBellHome", "ardmoreExterior"],
+    note: "Lafayette Hill proof emphasizes drywall finishing, careful interior prep, and exterior painting from Heritage House Painting projects near Whitemarsh and Montgomery County homes.",
+  },
+  plymouthmeetingpainters: {
+    photos: ["montgomeryExterior", "restaurantInterior", "blueBellDrywall", "diningRoom"],
+    testimonials: ["blueBellHome", "lafayetteDrywall", "amblerCommercial"],
+    note: "Plymouth Meeting proof uses nearby Montgomery County Heritage projects without overstating project locations that are not specifically sourced to Plymouth Meeting.",
+  },
+  gladwynepainters: {
+    photos: ["diningRoom", "ardmoreDining", "wayneBathroom", "montgomeryExterior"],
+    testimonials: ["ardmoreExterior", "waynePalette", "blueBellCraft"],
+    note: "Gladwyne proof focuses on Main Line finish quality, detailed interiors, exterior transformations, and nearby Heritage House Painting customer feedback.",
+  },
+  waynepainters: {
+    photos: ["wayneBathroom", "wayneDrywall", "diningRoom", "blueBellBedroom"],
+    testimonials: ["wayneInterior", "waynePalette", "ardmoreExterior"],
+    note: "Wayne pages lead with Wayne-specific bathroom and drywall project photography plus customer feedback from Wayne and nearby Main Line homes.",
+  },
+  ardmorepainters: {
+    photos: ["ardmoreDining", "diningRoom", "montgomeryExterior", "wayneBathroom"],
+    testimonials: ["ardmoreExterior", "ardmoreWalkthrough", "wayneInterior"],
+    note: "Ardmore proof prioritizes Main Line dining room, interior, and historic-home exterior work from Heritage House Painting.",
+  },
+};
+
 const sites = [
   {
     folder: "horshampainters",
@@ -321,6 +501,109 @@ function img(src, alt) {
   return `<img src="${src}" alt="${esc(alt)}" loading="lazy" decoding="async" width="1200" height="900">`;
 }
 
+function estimateFormScript() {
+  return `<script>
+      document.querySelectorAll(".estimate-form").forEach((form) => {
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const button = form.querySelector(".form-submit");
+          const status = form.querySelector(".form-status");
+          const originalText = button ? button.textContent : "Send Estimate Request";
+
+          if (status) {
+            status.textContent = "Sending your request...";
+            status.dataset.state = "pending";
+          }
+          if (button) {
+            button.disabled = true;
+            button.textContent = "Sending...";
+          }
+
+          try {
+            const formData = new FormData(form);
+            const payload = Object.fromEntries(formData.entries());
+            const response = await fetch(form.action, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            });
+            const result = await response.json().catch(() => ({}));
+
+            if (!response.ok || !result.ok) {
+              throw new Error(result.error || "Submission failed");
+            }
+
+            form.reset();
+            if (status) {
+              status.textContent = "Thanks. Your estimate request was sent.";
+              status.dataset.state = "success";
+            }
+          } catch (error) {
+            if (status) {
+              status.textContent = "Sorry, the request could not be sent. Please call (215) 791-4043.";
+              status.dataset.state = "error";
+            }
+          } finally {
+            if (button) {
+              button.disabled = false;
+              button.textContent = originalText;
+            }
+          }
+        });
+      });
+    </script>`;
+}
+
+function proofFor(site) {
+  const proof = siteProof[site.folder] || siteProof.horshampainters;
+  return {
+    ...proof,
+    photos: proof.photos.map((key) => heritageProjectPhotos[key]),
+    testimonials: proof.testimonials.map((key) => heritageTestimonials[key]),
+  };
+}
+
+function serviceProofFor(site, service) {
+  const proof = proofFor(site);
+  const photos = proof.photos
+    .filter((photo) => photo.services.includes(service.slug))
+    .concat(Object.values(heritageProjectPhotos).filter((photo) => photo.services.includes(service.slug)))
+    .filter((photo, index, list) => list.findIndex((item) => item.src === photo.src) === index)
+    .slice(0, 3);
+  const testimonials = proof.testimonials
+    .filter((testimonial) => testimonial.services.includes(service.slug))
+    .concat(Object.values(heritageTestimonials).filter((testimonial) => testimonial.services.includes(service.slug)))
+    .filter((testimonial, index, list) => list.findIndex((item) => item.quote === testimonial.quote) === index)
+    .slice(0, 2);
+
+  return { photos, testimonials };
+}
+
+function uniquePhotos(photos, usedSrcs = new Set(), count = photos.length) {
+  const picked = [];
+  for (const photo of photos) {
+    if (!photo || usedSrcs.has(photo.src)) continue;
+    picked.push(photo);
+    usedSrcs.add(photo.src);
+    if (picked.length >= count) break;
+  }
+  return picked;
+}
+
+function proofPhotoGrid(photos, site, usedSrcs = new Set(), count = photos.length) {
+  return uniquePhotos(photos, usedSrcs, count)
+    .map((photo) => `<figure>${img(photo.src, `${photo.alt} shown for ${site.shortPlace}-area homeowners`)}<figcaption>${esc(photo.caption)}</figcaption></figure>`)
+    .join("\n          ");
+}
+
+function testimonialCards(testimonials) {
+  return testimonials.map((testimonial) => `<article>
+            <p>&ldquo;${esc(testimonial.quote)}&rdquo;</p>
+            <strong>${esc(testimonial.name)}</strong>
+            <span>${esc(testimonial.context)}</span>
+          </article>`).join("\n          ");
+}
+
 function css(site) {
   return `:root {
   color-scheme: light;
@@ -566,6 +849,8 @@ p { margin: 0; overflow-wrap: break-word; }
 .answer-section, .services, .township-seo, .faq { background: #fff; }
 .local-proof { background: #f8f6f0; }
 .project-photos { background: var(--paper); }
+.heritage-proof { background: #fff; }
+.heritage-proof .section-heading { margin-bottom: 34px; }
 .answer-grid, .proof-notes { display: grid; gap: 18px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .proof-notes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .answer-grid article, .proof-notes article {
@@ -579,6 +864,26 @@ p { margin: 0; overflow-wrap: break-word; }
 .answer-grid h3, .proof-notes h3, .township-grid h3 { color: var(--navy); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1.06rem; }
 .answer-grid p, .proof-notes p, .township-grid p, .service-grid article p { color: var(--muted); }
 .proof-notes a { color: var(--blue); display: inline-block; font-weight: 800; margin: 0 10px 8px 0; text-underline-offset: 0.18em; }
+.testimonial-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 28px;
+}
+.testimonial-grid article {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(10, 22, 40, 0.08);
+  display: grid;
+  gap: 14px;
+  padding: 24px;
+}
+.testimonial-grid p { color: var(--ink); font-size: 1.02rem; line-height: 1.55; }
+.testimonial-grid strong { color: var(--navy); display: block; font-size: 0.98rem; line-height: 1.25; }
+.testimonial-grid span { color: var(--muted); display: block; font-size: 0.9rem; font-weight: 700; line-height: 1.35; margin-top: -8px; }
+.service-proof { background: var(--paper); }
+.service-proof .photo-grid { margin-bottom: 28px; }
 .section-heading { align-items: center; display: flex; flex-direction: column; margin: 0 auto 42px; max-width: 920px; text-align: center; width: 100%; }
 .section-heading .eyebrow { display: block; margin-left: auto; margin-right: auto; text-align: center; width: 100%; }
 .section-heading h2, .section-copy h2 { max-width: 900px; }
@@ -601,9 +906,7 @@ p { margin: 0; overflow-wrap: break-word; }
 .township-grid article { border-top: 5px solid var(--gold); padding: 24px; }
 .township-grid h3 { font-size: 1.08rem; line-height: 1.25; }
 .local {
-  background: linear-gradient(135deg, rgba(10, 22, 40, 0.96), rgba(22, 58, 99, 0.92)), url("${images.exterior}");
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(135deg, rgba(10, 22, 40, 0.98), rgba(22, 58, 99, 0.94));
   color: #fff;
 }
 .local .section-copy p:not(.eyebrow) { color: rgba(255, 255, 255, 0.78); }
@@ -678,7 +981,7 @@ p { margin: 0; overflow-wrap: break-word; }
   .site-header { align-items: flex-start; gap: 16px; flex-wrap: wrap; }
   nav { flex-wrap: wrap; justify-content: flex-end; }
   .intro, .hero-content, .local, .why, .contact-panel, .site-footer { grid-template-columns: 1fr; }
-  .service-grid, .answer-grid, .proof-notes, .why-grid, .photo-grid, .township-grid { grid-template-columns: 1fr; }
+  .service-grid, .answer-grid, .proof-notes, .why-grid, .photo-grid, .testimonial-grid, .township-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .site-header { align-items: center; position: static; }
@@ -712,6 +1015,11 @@ function page(site) {
   const title = `${site.brand} | Painters in ${site.shortPlace}, PA`;
   const description = `Exterior and interior painting in ${site.shortPlace}, PA. Local estimates near ${nearby.slice(0, 2).join(", ")}. 10% exterior offer.`;
   const logoUrl = `https://${site.domain}/${logoFile}`;
+  const proof = proofFor(site);
+  const homepageImagePool = proof.photos.concat(Object.values(heritageProjectPhotos));
+  const homepageUsedImages = new Set([images.heroInterior, images.exterior, images.interior, images.drywall]);
+  const heritageProofPhotos = proofPhotoGrid(homepageImagePool, site, homepageUsedImages, 4);
+  const galleryPhotos = proofPhotoGrid(homepageImagePool.slice().reverse(), site, homepageUsedImages, 4);
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -821,7 +1129,12 @@ function page(site) {
         openingHoursSpecification: [
           { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "08:00", closes: "19:00" },
         ],
-        sameAs: [`https://${site.domain}/`],
+        sameAs: [`https://${site.domain}/`, "https://heritagehousepainting.com"],
+        subjectOf: proof.photos.map((photo) => ({
+          "@type": "ImageObject",
+          url: photo.src,
+          caption: photo.caption,
+        })),
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: `Painting Services in ${site.shortPlace}, PA`,
@@ -984,6 +1297,19 @@ function page(site) {
           <article><h3>Service pages</h3><p>${serviceLinks(site)}</p></article>
         </div>
       </section>
+      <section class="section heritage-proof" aria-labelledby="heritage-proof-title">
+        <div class="section-heading">
+          <p class="eyebrow">Recent Heritage project work</p>
+          <h2 id="heritage-proof-title">Local painting proof behind ${esc(site.brand)}</h2>
+          <p>These examples come from Heritage House Painting project photography and customer feedback. They help ${esc(site.shortPlace)} homeowners compare real interior painting, exterior painting, drywall repair, and finish work before requesting an estimate.</p>
+        </div>
+        <div class="photo-grid">
+          ${heritageProofPhotos}
+        </div>
+        <div class="testimonial-grid" aria-label="Feedback from Heritage House Painting customers">
+          ${testimonialCards(proof.testimonials)}
+        </div>
+      </section>
       <section class="section services" id="services">
         <div class="section-heading">
           <p class="eyebrow">Painting services</p>
@@ -999,14 +1325,11 @@ function page(site) {
       <section class="section project-photos" aria-labelledby="project-photos-title">
         <div class="section-heading">
           <p class="eyebrow">Project photos</p>
-          <h2 id="project-photos-title">Real painting and drywall project photos</h2>
-          <p>These images use real project photography from the painting portfolio, not stock photo libraries.</p>
+          <h2 id="project-photos-title">Project photos from Heritage House Painting</h2>
+          <p>These images use project photography from the Heritage House Painting portfolio, not stock photo libraries.</p>
         </div>
         <div class="photo-grid">
-          <figure>${img(images.heroInterior, "Finished dining room interior painting project")}<figcaption>Dining Room Interior Painting</figcaption></figure>
-          <figure>${img(images.bedroom, "Bedroom interior painting project")}<figcaption>Bedroom Painting</figcaption></figure>
-          <figure>${img(images.bath, "Bathroom painting and renovation project")}<figcaption>Bathroom Painting</figcaption></figure>
-          <figure>${img(images.exterior2, "Exterior residential painting project")}<figcaption>Exterior House Painting</figcaption></figure>
+          ${galleryPhotos}
         </div>
       </section>
       <section class="section local" id="areas">
@@ -1067,56 +1390,7 @@ function page(site) {
       <div><strong>Local painting searches</strong><p>Exterior painter ${esc(site.shortPlace)} PA, ${esc(site.shortPlace)} painters, house painter ${esc(site.place)} PA, interior painting ${esc(nearby[0])}, exterior painting ${esc(nearby[1])}, painters ${esc(nearby[2])} PA, ${esc(site.county)} painting contractor.</p></div>
       <p class="copyright">&copy; 2026 ${esc(site.brand)}, a marketing site by Heritage House Painting. Heritage House Painting remains the service provider of record.</p>
     </footer>
-    <script>
-      document.querySelectorAll(".estimate-form").forEach((form) => {
-        form.addEventListener("submit", async (event) => {
-          event.preventDefault();
-          const button = form.querySelector(".form-submit");
-          const status = form.querySelector(".form-status");
-          const originalText = button ? button.textContent : "Send Estimate Request";
-
-          if (status) {
-            status.textContent = "Sending your request...";
-            status.dataset.state = "pending";
-          }
-          if (button) {
-            button.disabled = true;
-            button.textContent = "Sending...";
-          }
-
-          try {
-            const formData = new FormData(form);
-            const payload = Object.fromEntries(formData.entries());
-            const response = await fetch(form.action, {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(payload)
-            });
-            const result = await response.json().catch(() => ({}));
-
-            if (!response.ok || !result.ok) {
-              throw new Error(result.error || "Submission failed");
-            }
-
-            form.reset();
-            if (status) {
-              status.textContent = "Thanks. Your estimate request was sent.";
-              status.dataset.state = "success";
-            }
-          } catch (error) {
-            if (status) {
-              status.textContent = "Sorry, the request could not be sent. Please call (215) 791-4043.";
-              status.dataset.state = "error";
-            }
-          } finally {
-            if (button) {
-              button.disabled = false;
-              button.textContent = originalText;
-            }
-          }
-        });
-      });
-    </script>
+    ${estimateFormScript()}
   </body>
 </html>
 `;
@@ -1125,6 +1399,9 @@ function page(site) {
 function servicePage(site, service) {
   const title = `${service.title} in ${site.shortPlace}, PA | ${site.brand}`;
   const description = `${service.title} in ${site.shortPlace}, PA. ${service.summary} Local estimates near ${site.nearby.slice(0, 3).join(", ")}.`;
+  const proof = serviceProofFor(site, service);
+  const serviceUsedImages = new Set([service.image]);
+  const serviceProofPhotos = proofPhotoGrid(proof.photos.concat(Object.values(heritageProjectPhotos)), site, serviceUsedImages, 3);
   const relatedServices = servicePages
     .filter((item) => item.slug !== service.slug)
     .map((item) => `<a href="/${item.slug}">${esc(item.title)}</a>`)
@@ -1158,6 +1435,11 @@ function servicePage(site, service) {
         description: `${service.summary} Available around ${site.place}, ${site.nearby.slice(0, 6).join(", ")}, and ${site.county}.`,
         provider: { "@id": `https://${site.domain}/#localbusiness` },
         areaServed: [{ "@type": "City", name: site.place, addressRegion: "PA" }, ...site.nearby.map((name) => ({ "@type": "City", name, addressRegion: "PA" }))],
+        subjectOf: proof.photos.map((photo) => ({
+          "@type": "ImageObject",
+          url: photo.src,
+          caption: photo.caption,
+        })),
       },
       {
         "@type": "FAQPage",
@@ -1237,14 +1519,23 @@ function servicePage(site, service) {
           <article><h3>Related services</h3><p>${relatedServices}</p></article>
         </div>
       </section>
+      <section class="section service-proof" aria-labelledby="service-proof-title">
+        <div class="section-heading">
+          <p class="eyebrow">Painting &amp; drywall work near ${esc(site.shortPlace)}</p>
+          <h2 id="service-proof-title">${esc(service.title)} proof from Heritage House Painting</h2>
+          <p>Project photography and customer feedback from Heritage House Painting gives this ${esc(site.shortPlace)} service page real-world context beyond generic service descriptions.</p>
+        </div>
+        <div class="photo-grid">
+          ${serviceProofPhotos}
+        </div>
+        <div class="testimonial-grid" aria-label="Feedback from Heritage House Painting customers">
+          ${testimonialCards(proof.testimonials)}
+        </div>
+      </section>
       <section class="contact" id="contact">
         <div class="contact-panel">
           <div><p class="eyebrow">Free local estimate</p><h2>Request ${esc(service.title.toLowerCase())} pricing near ${esc(site.shortPlace)}</h2><p>Call or send a request with your project address, scope, surface conditions, and timing.</p></div>
-          <div class="contact-card">
-            <a href="tel:${phoneHref}">${phone}</a>
-            <span>${esc(address)}</span>
-            <a class="button primary" href="mailto:${email}?subject=${encodeURIComponent(site.shortPlace + " " + service.title + " Estimate")}">Email Estimate Request</a>
-          </div>
+          ${estimateForm(site)}
         </div>
       </section>
     </main>
@@ -1254,6 +1545,7 @@ function servicePage(site, service) {
       <div><strong>Service areas</strong><p>${esc(site.place)}, ${esc(site.nearby.join(", "))}, and nearby ${esc(site.county)} communities.</p></div>
       <p class="copyright">&copy; 2026 ${esc(site.brand)}, a marketing site by Heritage House Painting.</p>
     </footer>
+    ${estimateFormScript()}
   </body>
 </html>
 `;
@@ -1283,6 +1575,8 @@ Sitemap: https://${site.domain}/sitemap.xml
 }
 
 function sitemap(site) {
+  const proof = proofFor(site);
+  const proofImages = proof.photos.map((photo) => `    <image:image><image:loc>${photo.src}</image:loc><image:title>${esc(photo.caption)}</image:title></image:image>`).join("\n");
   const serviceUrls = servicePages.map((service) => `  <url>
     <loc>https://${site.domain}/${service.slug}</loc>
     <lastmod>2026-05-19</lastmod>
@@ -1302,6 +1596,7 @@ function sitemap(site) {
     <image:image><image:loc>${images.exterior}</image:loc><image:title>Exterior house painting project</image:title></image:image>
     <image:image><image:loc>${images.interior}</image:loc><image:title>Interior house painting project</image:title></image:image>
     <image:image><image:loc>${images.drywall}</image:loc><image:title>Drywall finishing project</image:title></image:image>
+${proofImages}
   </url>
 ${serviceUrls}
 </urlset>
@@ -1309,6 +1604,7 @@ ${serviceUrls}
 }
 
 function llms(site) {
+  const proof = proofFor(site);
   return `# ${site.brand}
 
 ${site.brand} is a local painting estimate website for homeowners searching for exterior painters, interior painters, house painters, drywall repair, trim painting, cabinet painting, commercial painting, and seasonal exterior painting offers in ${site.place}, Pennsylvania and nearby communities.
@@ -1337,6 +1633,12 @@ Local context:
 - Property types: ${site.positioning}
 - Local proof: ${site.localProof}
 - Nearby landmarks: ${site.landmarks.join(", ")}
+
+Heritage House Painting proof assets:
+${proof.photos.map((photo) => `- ${photo.caption}`).join("\n")}
+
+Customer feedback shown visually:
+${proof.testimonials.map((testimonial) => `- ${testimonial.name}, ${testimonial.context}`).join("\n")}
 
 Contact:
 - Phone: +1-215-791-4043
@@ -1396,7 +1698,7 @@ for (const site of sites) {
   fs.writeFileSync(path.join(dir, "llms.txt"), llms(site));
   fs.writeFileSync(path.join(dir, "vercel.json"), vercel());
   fs.mkdirSync(path.join(dir, "api"), { recursive: true });
-  fs.writeFileSync(path.join(dir, "api", "estimate.js"), 'module.exports = require("../../../api/estimate");\n');
+  fs.writeFileSync(path.join(dir, "api", "estimate.js"), 'process.env.LEAD_FROM_EMAIL =\n  process.env.LEAD_FROM_EMAIL || "Heritage House Painting <estimates@send.heritagehousepainting.com>";\n\nmodule.exports = require("../../../api/estimate");\n');
 }
 
 console.log(`Generated ${sites.length} sites in ${outRoot}`);
