@@ -52,6 +52,48 @@ a { color: inherit; }
 .brand-text span { color: rgba(255, 255, 255, 0.74); display: block; font-size: 0.82rem; margin-top: 3px; }
 nav { align-items: center; display: flex; gap: 22px; font-size: 0.94rem; font-weight: 700; justify-content: flex-end; }
 nav a { color: #fff; text-decoration: none; }
+.service-menu { position: relative; }
+.service-menu summary {
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 6px;
+  list-style: none;
+}
+.service-menu summary::-webkit-details-marker { display: none; }
+.service-menu summary::after {
+  border-color: currentColor transparent transparent;
+  border-style: solid;
+  border-width: 5px 4px 0;
+  content: "";
+  display: inline-block;
+  margin-top: 2px;
+}
+.service-menu-panel {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(10, 22, 40, 0.2);
+  display: grid;
+  gap: 2px;
+  min-width: 238px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 14px);
+  z-index: 30;
+}
+.service-menu-panel a {
+  border-radius: 6px;
+  color: var(--navy);
+  display: block;
+  line-height: 1.25;
+  padding: 10px 12px;
+  white-space: nowrap;
+}
+.service-menu-panel a:hover,
+.service-menu-panel a:focus { background: #f4efe4; outline: none; }
 .phone-link { background: var(--gold); border-radius: 8px; color: var(--navy); padding: 10px 14px; white-space: nowrap; }
 .promo-banner {
   align-items: center;
@@ -217,13 +259,13 @@ p { margin: 0; overflow-wrap: break-word; }
 .section-heading .eyebrow { display: block; margin-left: auto; margin-right: auto; text-align: center; width: 100%; }
 .section-heading h2, .section-copy h2 { max-width: 900px; }
 .service-grid, .why-grid, .photo-grid, .township-grid { display: grid; gap: 22px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.service-grid article, .why-grid article, .township-grid article, details, .contact-card {
+.service-grid article, .why-grid article, .township-grid article, .faq details, .contact-card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
 }
-.service-grid article, .photo-grid figure, .why-grid article, .township-grid article, details { box-shadow: 0 14px 34px rgba(10, 22, 40, 0.08); }
+.service-grid article, .photo-grid figure, .why-grid article, .township-grid article, .faq details { box-shadow: 0 14px 34px rgba(10, 22, 40, 0.08); }
 .service-grid img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
 .service-grid article h3, .service-grid article p { padding-left: 20px; padding-right: 20px; }
 .service-grid article h3 { margin-top: 22px; }
@@ -282,9 +324,9 @@ p { margin: 0; overflow-wrap: break-word; }
 .why-grid article { min-height: 210px; padding: 24px; text-align: left; }
 .why-grid article h3 { font-size: 1.3rem; }
 .why-grid article p { font-size: 1rem; line-height: 1.55; }
-details { margin: 12px auto; max-width: 900px; padding: 18px 20px; }
-summary { cursor: pointer; font-weight: 800; line-height: 1.3; text-wrap: balance; }
-details p { margin-top: 12px; }
+.faq details { margin: 12px auto; max-width: 900px; padding: 18px 20px; }
+.faq summary { cursor: pointer; font-weight: 800; line-height: 1.3; text-wrap: balance; }
+.faq details p { margin-top: 12px; }
 .contact {
   background-image: linear-gradient(90deg, rgba(11, 31, 53, 0.88), rgba(11, 31, 53, 0.58)), url("https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2018605b-e120-4b3f-584a-94d0ec079100/public");
   background-position: center;
@@ -293,7 +335,7 @@ details p { margin-top: 12px; }
   padding: clamp(64px, 9vw, 112px) clamp(20px, 6vw, 86px);
   scroll-margin-top: 92px;
 }
-.contact-panel { align-items: center; display: grid; gap: 36px; grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.7fr); margin: 0 auto; max-width: 1160px; }
+.contact-panel { align-items: center; display: grid; gap: 36px; grid-template-columns: minmax(0, 0.95fr) minmax(340px, 480px); margin: 0 auto; max-width: 1160px; }
 .contact-panel p:not(.eyebrow) { color: rgba(255, 255, 255, 0.82); margin-top: 18px; }
 .contact-card { display: grid; gap: 12px; padding: 24px; }
 .contact-card a, .contact-card span { color: var(--ink); font-weight: 700; }
@@ -318,7 +360,10 @@ details p { margin-top: 12px; }
 }
 @media (max-width: 640px) {
   .site-header { align-items: center; position: static; }
-  nav a:not(.phone-link) { display: none; }
+  nav > a:not(.phone-link), .service-menu-panel a { display: none; }
+  .service-menu { display: inline-flex; }
+  .service-menu-panel { left: auto; min-width: 230px; right: 0; }
+  .service-menu[open] .service-menu-panel a { display: block; }
   .hero { min-height: auto; }
   .hero-overlay { background: rgba(9, 24, 43, 0.82); }
   .hero-content { padding-top: 46px; }

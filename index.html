@@ -575,7 +575,15 @@
         <span class="brand-text"><strong>Horsham Painters</strong><span>Horsham Township, PA</span></span>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="#services">Services</a>
+        <details class="service-menu">
+          <summary>Services</summary>
+          <div class="service-menu-panel">
+            <a href="/exterior-painting">Exterior Painting</a>
+            <a href="/interior-painting">Interior Painting</a>
+            <a href="/drywall-repair">Drywall Repair &amp; Painting</a>
+            <a href="/cabinet-trim-painting">Cabinet &amp; Trim Painting</a>
+          </div>
+        </details>
         <a href="#areas">Areas</a>
         <a href="#faq">FAQ</a>
         <a class="phone-link" href="tel:+12157914043">(215) 791-4043</a>
@@ -744,13 +752,33 @@
       <section class="contact" id="contact">
         <div class="contact-panel">
           <div><p class="eyebrow">Free local estimate</p><h2>Talk with a local painter about your Horsham-area project</h2><p>Call today or send a quick request with your project address, the town or township, the exterior areas or rooms you want painted, and your ideal timing. Mention the 10% exterior painting offer if your project is outside.</p></div>
-          <div class="contact-card">
-            <a href="tel:+12157914043">(215) 791-4043</a>
-            <span>Estimate requests routed through the footer-listed service provider</span>
-            <span>4001 1st Ave, Lafayette Hill, PA 19444</span>
-            <span>Mon - Sat: 8:00am - 7:00pm</span>
-            <a class="button primary" href="mailto:heritagehousepainting@gmail.com?subject=Horsham%20Painting%20Estimate%20Request">Email Estimate Request</a>
-          </div>
+          <form class="estimate-form" action="/api/estimate" method="POST" aria-label="Request a painting estimate">
+            <input type="hidden" name="_subject" value="New Horsham Painters Estimate Request">
+            <input type="hidden" name="Marketing site" value="horshampainters.com">
+            <input type="hidden" name="Seasonal offer" value="10% off qualifying exterior painting projects">
+            <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <p class="form-kicker">Free Estimate</p>
+            <h2>Request a Horsham painting quote</h2>
+            <p class="form-note">Tell us about your project and ask about the seasonal exterior painting discount.</p>
+            <div class="form-grid">
+              <label>Full Name<input type="text" name="Full name" autocomplete="name" required></label>
+              <label>Phone<input type="tel" name="Phone" autocomplete="tel" required></label>
+              <label>Email<input type="email" name="email" autocomplete="email"></label>
+              <label>Project Address<input type="text" name="Project address" autocomplete="street-address" placeholder="Horsham Township, PA" required></label>
+              <label class="full">Service Needed<select name="Service needed" required>
+                <option value="">Choose a service</option>
+                <option>Exterior painting - 10% seasonal offer</option>
+                <option>Interior painting</option>
+                <option>Drywall repair</option>
+                <option>Trim, carpentry, or cabinets</option>
+                <option>Commercial painting</option>
+              </select></label>
+              <label class="full">Project Details<textarea name="Project details" rows="4" placeholder="Tell us about the exterior areas, rooms, timing, or colors you have in mind."></textarea></label>
+            </div>
+            <button class="button primary form-submit" type="submit">Send Estimate Request</button>
+            <p class="form-disclaimer">Free local estimates for Horsham-area painting projects. Exterior offer applies to qualifying projects.</p>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
         </div>
       </section>
     </main>

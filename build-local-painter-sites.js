@@ -268,6 +268,55 @@ function serviceLinks(site) {
   return servicePages.map((service) => `<a href="/${service.slug}">${esc(service.title)}</a>`).join(" ");
 }
 
+function serviceMenu() {
+  return `<details class="service-menu">
+          <summary>Services</summary>
+          <div class="service-menu-panel">
+            ${servicePages.map((service) => `<a href="/${service.slug}">${esc(service.title)}</a>`).join("\n            ")}
+          </div>
+        </details>`;
+}
+
+function topNav(isHome = true) {
+  const homeLink = isHome ? "" : "\n        <a href=\"/\">Home</a>";
+  return `<nav aria-label="Primary navigation">${homeLink}
+        ${serviceMenu()}
+        <a href="${isHome ? "#areas" : "/#areas"}">Areas</a>
+        <a href="${isHome ? "#faq" : "/#faq"}">FAQ</a>
+        <a class="phone-link" href="tel:${phoneHref}">${phone}</a>
+      </nav>`;
+}
+
+function estimateForm(site) {
+  return `<form class="estimate-form" action="/api/estimate" method="POST" aria-label="Request a painting estimate">
+            <input type="hidden" name="_subject" value="New ${esc(site.brand)} Estimate Request">
+            <input type="hidden" name="Marketing site" value="${esc(site.domain)}">
+            <input type="hidden" name="Seasonal offer" value="10% off qualifying exterior painting projects">
+            <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <p class="form-kicker">Free Estimate</p>
+            <h2>Request a ${esc(site.shortPlace)} painting quote</h2>
+            <p class="form-note">Tell us about your project and ask about the seasonal exterior painting discount.</p>
+            <div class="form-grid">
+              <label>Full Name<input type="text" name="Full name" autocomplete="name" required></label>
+              <label>Phone<input type="tel" name="Phone" autocomplete="tel" required></label>
+              <label>Email<input type="email" name="email" autocomplete="email"></label>
+              <label>Project Address<input type="text" name="Project address" autocomplete="street-address" placeholder="${esc(site.place)}, PA" required></label>
+              <label class="full">Service Needed<select name="Service needed" required>
+                <option value="">Choose a service</option>
+                <option>Exterior painting - 10% seasonal offer</option>
+                <option>Interior painting</option>
+                <option>Drywall repair</option>
+                <option>Trim, carpentry, or cabinets</option>
+                <option>Commercial painting</option>
+              </select></label>
+              <label class="full">Project Details<textarea name="Project details" rows="4" placeholder="Tell us about the exterior areas, rooms, timing, or colors you have in mind."></textarea></label>
+            </div>
+            <button class="button primary form-submit" type="submit">Send Estimate Request</button>
+            <p class="form-disclaimer">Free local estimates for ${esc(site.shortPlace)}-area painting projects. Exterior offer applies to qualifying projects.</p>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>`;
+}
+
 function css(site) {
   return `:root {
   color-scheme: light;
@@ -323,6 +372,48 @@ a { color: inherit; }
 .brand-text span { color: rgba(255, 255, 255, 0.74); display: block; font-size: 0.82rem; margin-top: 3px; }
 nav { align-items: center; display: flex; gap: 22px; font-size: 0.94rem; font-weight: 700; justify-content: flex-end; }
 nav a { color: #fff; text-decoration: none; }
+.service-menu { position: relative; }
+.service-menu summary {
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 6px;
+  list-style: none;
+}
+.service-menu summary::-webkit-details-marker { display: none; }
+.service-menu summary::after {
+  border-color: currentColor transparent transparent;
+  border-style: solid;
+  border-width: 5px 4px 0;
+  content: "";
+  display: inline-block;
+  margin-top: 2px;
+}
+.service-menu-panel {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(10, 22, 40, 0.2);
+  display: grid;
+  gap: 2px;
+  min-width: 238px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 14px);
+  z-index: 30;
+}
+.service-menu-panel a {
+  border-radius: 6px;
+  color: var(--navy);
+  display: block;
+  line-height: 1.25;
+  padding: 10px 12px;
+  white-space: nowrap;
+}
+.service-menu-panel a:hover,
+.service-menu-panel a:focus { background: #f4efe4; outline: none; }
 .phone-link { background: var(--gold); border-radius: 8px; color: var(--navy); padding: 10px 14px; white-space: nowrap; }
 .promo-banner {
   align-items: center;
@@ -488,13 +579,13 @@ p { margin: 0; overflow-wrap: break-word; }
 .section-heading .eyebrow { display: block; margin-left: auto; margin-right: auto; text-align: center; width: 100%; }
 .section-heading h2, .section-copy h2 { max-width: 900px; }
 .service-grid, .why-grid, .photo-grid, .township-grid { display: grid; gap: 22px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.service-grid article, .why-grid article, .township-grid article, details, .contact-card {
+.service-grid article, .why-grid article, .township-grid article, .faq details, .contact-card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
 }
-.service-grid article, .photo-grid figure, .why-grid article, .township-grid article, details { box-shadow: 0 14px 34px rgba(10, 22, 40, 0.08); }
+.service-grid article, .photo-grid figure, .why-grid article, .township-grid article, .faq details { box-shadow: 0 14px 34px rgba(10, 22, 40, 0.08); }
 .service-grid img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
 .service-grid article h3, .service-grid article p { padding-left: 20px; padding-right: 20px; }
 .service-grid article h3 { margin-top: 22px; }
@@ -553,9 +644,9 @@ p { margin: 0; overflow-wrap: break-word; }
 .why-grid article { min-height: 210px; padding: 24px; text-align: left; }
 .why-grid article h3 { font-size: 1.3rem; }
 .why-grid article p { font-size: 1rem; line-height: 1.55; }
-details { margin: 12px auto; max-width: 900px; padding: 18px 20px; }
-summary { cursor: pointer; font-weight: 800; line-height: 1.3; text-wrap: balance; }
-details p { margin-top: 12px; }
+.faq details { margin: 12px auto; max-width: 900px; padding: 18px 20px; }
+.faq summary { cursor: pointer; font-weight: 800; line-height: 1.3; text-wrap: balance; }
+.faq details p { margin-top: 12px; }
 .contact {
   background-image: linear-gradient(90deg, rgba(11, 31, 53, 0.88), rgba(11, 31, 53, 0.58)), url("${images.contact}");
   background-position: center;
@@ -564,7 +655,7 @@ details p { margin-top: 12px; }
   padding: clamp(64px, 9vw, 112px) clamp(20px, 6vw, 86px);
   scroll-margin-top: 92px;
 }
-.contact-panel { align-items: center; display: grid; gap: 36px; grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.7fr); margin: 0 auto; max-width: 1160px; }
+.contact-panel { align-items: center; display: grid; gap: 36px; grid-template-columns: minmax(0, 0.95fr) minmax(340px, 480px); margin: 0 auto; max-width: 1160px; }
 .contact-panel p:not(.eyebrow) { color: rgba(255, 255, 255, 0.82); margin-top: 18px; }
 .contact-card { display: grid; gap: 12px; padding: 24px; }
 .contact-card a, .contact-card span { color: var(--ink); font-weight: 700; }
@@ -589,7 +680,10 @@ details p { margin-top: 12px; }
 }
 @media (max-width: 640px) {
   .site-header { align-items: center; position: static; }
-  nav a:not(.phone-link) { display: none; }
+  nav > a:not(.phone-link), .service-menu-panel a { display: none; }
+  .service-menu { display: inline-flex; }
+  .service-menu-panel { left: auto; min-width: 230px; right: 0; }
+  .service-menu[open] .service-menu-panel a { display: block; }
   .hero { min-height: auto; }
   .hero-overlay { background: rgba(9, 24, 43, 0.82); }
   .hero-content { padding-top: 46px; }
@@ -824,12 +918,7 @@ function page(site) {
         <span class="brand-mark" aria-hidden="true">${site.monogram}</span>
         <span class="brand-text"><strong>${esc(site.brand)}</strong><span>${esc(site.place)}, PA</span></span>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#areas">Areas</a>
-        <a href="#faq">FAQ</a>
-        <a class="phone-link" href="tel:${phoneHref}">${phone}</a>
-      </nav>
+      ${topNav(true)}
     </header>
     <main>
       <section class="promo-banner" aria-label="Seasonal exterior painting offer">
@@ -855,33 +944,7 @@ function page(site) {
               <li>Exterior painting special</li>
             </ul>
           </div>
-          <form class="estimate-form" action="/api/estimate" method="POST" aria-label="Request a painting estimate">
-            <input type="hidden" name="_subject" value="New ${esc(site.brand)} Estimate Request">
-            <input type="hidden" name="Marketing site" value="${esc(site.domain)}">
-            <input type="hidden" name="Seasonal offer" value="10% off qualifying exterior painting projects">
-            <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-            <p class="form-kicker">Free Estimate</p>
-            <h2>Request a ${esc(site.shortPlace)} painting quote</h2>
-            <p class="form-note">Tell us about your project and ask about the seasonal exterior painting discount.</p>
-            <div class="form-grid">
-              <label>Full Name<input type="text" name="Full name" autocomplete="name" required></label>
-              <label>Phone<input type="tel" name="Phone" autocomplete="tel" required></label>
-              <label>Email<input type="email" name="email" autocomplete="email"></label>
-              <label>Project Address<input type="text" name="Project address" autocomplete="street-address" placeholder="${esc(site.place)}, PA" required></label>
-              <label class="full">Service Needed<select name="Service needed" required>
-                <option value="">Choose a service</option>
-                <option>Exterior painting - 10% seasonal offer</option>
-                <option>Interior painting</option>
-                <option>Drywall repair</option>
-                <option>Trim, carpentry, or cabinets</option>
-                <option>Commercial painting</option>
-              </select></label>
-              <label class="full">Project Details<textarea name="Project details" rows="4" placeholder="Tell us about the exterior areas, rooms, timing, or colors you have in mind."></textarea></label>
-            </div>
-            <button class="button primary form-submit" type="submit">Send Estimate Request</button>
-            <p class="form-disclaimer">Free local estimates for ${esc(site.shortPlace)}-area painting projects. Exterior offer applies to qualifying projects.</p>
-            <p class="form-status" role="status" aria-live="polite"></p>
-          </form>
+          ${estimateForm(site)}
         </div>
       </section>
       <section class="intro section">
@@ -994,13 +1057,7 @@ function page(site) {
       <section class="contact" id="contact">
         <div class="contact-panel">
           <div><p class="eyebrow">Free local estimate</p><h2>Talk with a local painter about your ${esc(site.shortPlace)}-area project</h2><p>Call today or send a quick request with your project address, the town or township, the exterior areas or rooms you want painted, and your ideal timing. Mention the 10% exterior painting offer if your project is outside.</p></div>
-          <div class="contact-card">
-            <a href="tel:${phoneHref}">${phone}</a>
-            <span>Estimate requests routed through the footer-listed service provider</span>
-            <span>${esc(address)}</span>
-            <span>Mon - Sat: 8:00am - 7:00pm</span>
-            <a class="button primary" href="mailto:${email}?subject=${encodeURIComponent(site.shortPlace + " Painting Estimate Request")}">Email Estimate Request</a>
-          </div>
+          ${estimateForm(site)}
         </div>
       </section>
     </main>
@@ -1142,12 +1199,7 @@ function servicePage(site, service) {
         <span class="brand-mark" aria-hidden="true">${site.monogram}</span>
         <span class="brand-text"><strong>${esc(site.brand)}</strong><span>${esc(site.place)}, PA</span></span>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="/">Home</a>
-        <a href="/#services">Services</a>
-        <a href="/#areas">Areas</a>
-        <a class="phone-link" href="tel:${phoneHref}">${phone}</a>
-      </nav>
+      ${topNav(false)}
     </header>
     <main>
       <section class="hero" aria-labelledby="service-title">
