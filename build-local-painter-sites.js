@@ -471,7 +471,7 @@ function topNav(isHome = true) {
   const homeLink = isHome ? "" : "\n        <a href=\"/\">Home</a>";
   return `<nav aria-label="Primary navigation">${homeLink}
         ${serviceMenu()}
-        <a href="/project-proof">Proof</a>
+        <a href="/project-proof">Portfolio</a>
         <a href="/blog">Blog</a>
         <a href="${isHome ? "#areas" : "/#areas"}">Areas</a>
         <a href="${isHome ? "#faq" : "/#faq"}">FAQ</a>
