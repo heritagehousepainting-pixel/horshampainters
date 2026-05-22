@@ -30,6 +30,42 @@
       "destination": "/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "destination": "/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-exterior-painting-season-guide",
+      "destination": "/blog/lowergwyneddpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-exterior-paint-home-value-protection",
+      "destination": "/blog/lowergwyneddpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-sherwin-williams-paint-types-sheens-quality",
+      "destination": "/blog/lowergwyneddpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-how-to-find-trusted-professional-painter",
+      "destination": "/blog/lowergwyneddpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-exterior-paint-prep-checklist",
+      "destination": "/blog/lowergwyneddpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-room-painting-timeline",
+      "destination": "/blog/lowergwyneddpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-wall-prep-before-painting",
+      "destination": "/blog/lowergwyneddpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }

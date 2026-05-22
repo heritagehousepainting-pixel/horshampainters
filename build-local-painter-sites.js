@@ -6,6 +6,7 @@ const phone = "(215) 791-4043";
 const phoneHref = "+12157914043";
 const email = "heritagehousepainting@gmail.com";
 const address = "4001 1st Ave, Lafayette Hill, PA 19444";
+const heritageUrl = "https://heritagehousepainting.com";
 const analyticsScript = '<script defer src="/analytics.js" data-posthog-key="phc_AnJ7YEniPw5kv7NrfxB9gQLQ4RpqLWu6vkGASD3FVejB" data-posthog-host="https://us.i.posthog.com"></script>';
 const logoFile = "horsham-painters-logo-cropped.png";
 
@@ -448,6 +449,15 @@ function serviceLinks(site) {
   return servicePages.map((service) => `<a href="/${service.slug}">${esc(service.title)}</a>`).join(" ");
 }
 
+function footer(site, resourceTitle = "Local resources", resourceLinks = `<a href="/project-proof">Project proof</a><br><a href="/blog">Painting blog</a><br>${serviceLinks(site)}`) {
+  return `<footer class="site-footer">
+      <div><strong>${esc(site.brand)}</strong><p>${esc(site.brand)} is a local marketing website operated by <a href="${heritageUrl}">Heritage House Painting</a>. All contact requests, estimates, painting services, and customer communication are handled by Heritage House Painting.</p></div>
+      <div><strong>Heritage House Painting</strong><p>${esc(address)}<br><a href="tel:${phoneHref}">${phone}</a><br><a href="mailto:${email}">${email}</a><br><a href="${heritageUrl}">Main company website</a></p></div>
+      <div><strong>${esc(resourceTitle)}</strong><p>${resourceLinks}</p></div>
+      <p class="copyright">&copy; 2026 ${esc(site.brand)}, a marketing site by Heritage House Painting. Heritage House Painting remains the service provider of record.</p>
+    </footer>`;
+}
+
 function serviceMenu() {
   return `<details class="service-menu">
           <summary>Services</summary>
@@ -461,6 +471,8 @@ function topNav(isHome = true) {
   const homeLink = isHome ? "" : "\n        <a href=\"/\">Home</a>";
   return `<nav aria-label="Primary navigation">${homeLink}
         ${serviceMenu()}
+        <a href="/project-proof">Proof</a>
+        <a href="/blog">Blog</a>
         <a href="${isHome ? "#areas" : "/#areas"}">Areas</a>
         <a href="${isHome ? "#faq" : "/#faq"}">FAQ</a>
         <a class="phone-link" href="tel:${phoneHref}">${phone}</a>
@@ -602,6 +614,380 @@ function testimonialCards(testimonials) {
             <strong>${esc(testimonial.name)}</strong>
             <span>${esc(testimonial.context)}</span>
           </article>`).join("\n          ");
+}
+
+function blogPosts(site) {
+  const firstNearby = site.nearby[0];
+  const secondNearby = site.nearby[1];
+  return [
+    {
+      slug: `${site.folder}-exterior-painting-season-guide`,
+      title: `When ${site.shortPlace} Homeowners Should Schedule Exterior Painting`,
+      description: `A local guide to exterior painting timing, prep, surfaces, and estimate planning for ${site.place}, PA homeowners.`,
+      date: "2026-05-19",
+      category: "Exterior painting",
+      image: images.exterior,
+      sections: [
+        {
+          heading: `Why exterior painting timing matters in ${site.place}`,
+          body: `${site.shortPlace}-area homes deal with seasonal moisture, direct sun, mature landscaping, and older exterior trim. Planning exterior painting before peeling or exposed wood spreads helps protect siding, shutters, doors, porch rails, and trim while keeping curb appeal strong.`,
+        },
+        {
+          heading: "What to look at before requesting an estimate",
+          body: `Walk the property and note peeling paint, soft wood, cracked caulk, faded shutters, mildew, failing porch railings, and areas that take the most weather. Photos of the front, sides, trim details, and any problem spots help the estimate conversation move faster.`,
+        },
+        {
+          heading: `Local surfaces common near ${site.shortPlace}`,
+          body: `Homes around ${site.roads} often need a mix of siding painting, trim prep, door painting, shutters, railings, and porch details. The best scope depends on exposure, existing coating condition, landscaping clearance, and whether repairs are needed before paint.`,
+        },
+        {
+          heading: "Interior and drywall projects can pair well",
+          body: `If weather delays exterior work, homeowners can often use the same estimate conversation for interior painting, drywall repair, cabinet painting, or trim finishing. That helps coordinate color planning and schedule windows across the home.`,
+        },
+        {
+          heading: "How to get the cleanest quote",
+          body: `Include your project address, the surfaces you want painted, preferred timing, whether the home is occupied, and any color direction. Homeowners near ${firstNearby}, ${secondNearby}, and surrounding ${site.county} communities can use the estimate form or call ${phone}.`,
+        },
+      ],
+      faqs: [
+        {
+          question: `What is the best season for exterior painting in ${site.shortPlace}, PA?`,
+          answer: `Spring through fall is usually the main exterior painting window, as long as temperatures, moisture, and surface conditions are suitable. The exact schedule depends on weather, prep needs, and the surfaces being painted.`,
+        },
+        {
+          question: "Can exterior painting include shutters, doors, and porch railings?",
+          answer: "Yes. Exterior painting estimates can include siding, trim, shutters, doors, porch railings, and other curb appeal details when those surfaces are part of the requested scope.",
+        },
+        {
+          question: `Do you serve areas outside ${site.place}?`,
+          answer: `Yes. Common nearby service areas include ${site.place}, ${site.nearby.slice(0, 6).join(", ")}, and nearby ${site.county} communities.`,
+        },
+      ],
+    },
+    {
+      slug: `${site.folder}-exterior-paint-home-value-protection`,
+      title: `How Exterior Paint Protects ${site.shortPlace} Homes and Supports Home Value`,
+      description: `Why exterior painting can protect siding, trim, brick details, and curb appeal for ${site.place}, PA homeowners.`,
+      date: "2026-05-20",
+      category: "Exterior value",
+      image: images.blueBellExterior,
+      sections: [
+        {
+          heading: "Exterior paint is more than a color change",
+          body: `A fresh exterior paint job can make a ${site.shortPlace} home feel cleaner, newer, and better cared for from the street. That curb appeal matters when neighbors, visitors, appraisers, and future buyers form a first impression before they ever step inside.`,
+        },
+        {
+          heading: "Paint helps protect siding, trim, and exterior details",
+          body: `Good exterior paint creates a protective coating over wood trim, siding, doors, shutters, porch railings, and other painted surfaces. When the coating fails, moisture and sun exposure can speed up peeling, cracking, swelling, mildew, and wood deterioration.`,
+        },
+        {
+          heading: "Brick and masonry need the right plan",
+          body: `Brick, stucco, and masonry surfaces should never be treated like ordinary wood trim. Some brick should be left natural, and some masonry projects need breathable coating systems so trapped moisture does not create bigger problems later.`,
+        },
+        {
+          heading: `Why this matters around ${site.place}`,
+          body: `Homes near ${site.roads} often combine older trim, shaded sides, sun-exposed elevations, porches, railings, and detailed entries. A professional exterior estimate should identify which surfaces need cleaning, scraping, sanding, priming, caulking, repair, or a specialized coating before finish paint.`,
+        },
+        {
+          heading: "How exterior paint can support resale confidence",
+          body: `Fresh paint cannot guarantee a specific sale price, but it can remove buyer hesitation. A maintained exterior tells buyers that the home has been cared for, reduces obvious repair objections, and helps photography, showings, and curb appeal work harder.`,
+        },
+      ],
+      faqs: [
+        {
+          question: `Can exterior painting increase home value in ${site.shortPlace}?`,
+          answer: `It can support perceived value by improving curb appeal and reducing visible maintenance concerns, but the exact impact depends on the home, market, paint condition, color choices, and quality of prep.`,
+        },
+        {
+          question: "Does exterior paint protect siding?",
+          answer: "Yes. On paintable siding and trim, exterior paint helps shield surfaces from sun, moisture, and wear when the surface is properly prepared and the right coating is used.",
+        },
+        {
+          question: "Should brick always be painted?",
+          answer: "No. Brick requires careful evaluation. Some masonry should stay unpainted, and painted masonry often needs breathable products and excellent moisture planning.",
+        },
+      ],
+    },
+    {
+      slug: `${site.folder}-sherwin-williams-paint-types-sheens-quality`,
+      title: `Sherwin-Williams Paint Types, Sheens, and Quality Levels Explained`,
+      description: `A homeowner-friendly guide to Sherwin-Williams sheens, acrylic latex paint, and common lines like Emerald, SuperPaint, and ProMar.`,
+      date: "2026-05-20",
+      category: "Paint selection",
+      image: images.interior,
+      sections: [
+        {
+          heading: "Paint selection starts with the surface",
+          body: `The right Sherwin-Williams paint choice depends on where the paint is going: interior walls, ceilings, trim, cabinets, doors, exterior siding, shutters, masonry, or commercial spaces. A professional painter should match the coating to the surface, traffic level, moisture exposure, and desired finish.`,
+        },
+        {
+          heading: "Sheen changes both look and performance",
+          body: `Flat and matte finishes reduce shine and hide minor wall imperfections. Satin and low-luster finishes add more washability and a soft glow. Semi-gloss and gloss are commonly considered for trim, doors, cabinets, and areas where durability and wipeability matter more than hiding surface flaws.`,
+        },
+        {
+          heading: "Latex, acrylic, and specialty coatings",
+          body: `Many modern residential paints are water-based latex or acrylic latex coatings. Exterior projects, masonry, cabinets, and high-moisture rooms may require more specialized products, bonding primers, urethane-modified coatings, or breathable masonry systems instead of a generic wall paint.`,
+        },
+        {
+          heading: "Emerald, SuperPaint, and ProMar are not the same job answer",
+          body: `Sherwin-Williams product lines serve different needs. Emerald is often positioned as a premium option, SuperPaint is a common residential workhorse, and ProMar lines are frequently used in professional interior repaint settings. The best choice depends on budget, substrate, room use, color change, durability needs, and whether the project is residential or commercial.`,
+        },
+        {
+          heading: `How a ${site.shortPlace} painter should guide the decision`,
+          body: `A strong estimate should explain the recommended product, sheen, primer, number of coats, and why that combination fits the home. For projects near ${firstNearby}, ${secondNearby}, and ${site.place}, the answer may differ between exterior trim, a bathroom ceiling, kitchen cabinets, and a whole-home interior repaint.`,
+        },
+      ],
+      faqs: [
+        {
+          question: "What sheen should I use for interior walls?",
+          answer: "Many homeowners choose matte, eggshell, or satin depending on room traffic, lighting, wall condition, and washability needs. A painter should help balance appearance and durability.",
+        },
+        {
+          question: "Is Emerald always better than SuperPaint?",
+          answer: "Not always. Emerald may be a premium fit for some projects, while SuperPaint or another line may be appropriate for others. Surface, prep, budget, and performance goals should drive the decision.",
+        },
+        {
+          question: "Can one paint be used everywhere?",
+          answer: "Usually no. Walls, trim, cabinets, masonry, bathrooms, ceilings, and exteriors can require different coatings, primers, and sheens.",
+        },
+      ],
+    },
+    {
+      slug: `${site.folder}-how-to-find-trusted-professional-painter`,
+      title: `How to Find a Trusted Professional Painter Near ${site.shortPlace}`,
+      description: `What separates a professional painter from a risky low-detail paint job: prep, communication, materials, protection, and finish quality.`,
+      date: "2026-05-20",
+      category: "Hiring a painter",
+      image: images.contact,
+      sections: [
+        {
+          heading: "A trusted painter starts with a clear scope",
+          body: `A professional painter should explain what is included before the job starts: surfaces, prep steps, primer, paint product, sheen, number of coats, repairs, protection, cleanup, timing, and what happens if hidden damage is found.`,
+        },
+        {
+          heading: "Prep is where quality is won or lost",
+          body: `Good painting is not just rolling color onto a wall. Prep can include washing, scraping, sanding, patching, caulking, masking, priming stains, repairing drywall, filling nail holes, protecting floors, and correcting surface problems before finish paint is applied.`,
+        },
+        {
+          heading: "Details show up in the finished room",
+          body: `Professional detail work shows in straight cut lines, smooth drywall patches, clean trim edges, even sheen, consistent coverage, neat caulk lines, protected hardware, and rooms that are left clean at the end of each workday.`,
+        },
+        {
+          heading: "Communication matters as much as coating",
+          body: `Homeowners should know who is coming, when work starts, how long the project should take, which rooms or exterior areas are active, and how questions will be handled. Clear communication reduces surprises and keeps the project from feeling chaotic.`,
+        },
+        {
+          heading: `What to ask before hiring a painter in ${site.place}`,
+          body: `Ask about insurance, prep process, paint products, warranty expectations, project protection, schedule, payment timing, and similar work near ${site.nearby.slice(0, 4).join(", ")}. The answers should feel specific, not vague or rushed.`,
+        },
+      ],
+      faqs: [
+        {
+          question: "What makes a painter professional?",
+          answer: "Clear scope, careful prep, appropriate materials, surface protection, consistent communication, clean work habits, and attention to finish details are strong professional signals.",
+        },
+        {
+          question: "Should the cheapest painting quote win?",
+          answer: "Not automatically. A low quote may leave out prep, primer, repairs, protection, coats, or quality materials. Compare scope and process, not price alone.",
+        },
+        {
+          question: `How do I request a painting estimate near ${site.shortPlace}?`,
+          answer: `Share the project address, surfaces, timing, repair needs, and rooms or exterior areas involved. Homeowners near ${site.place} and nearby ${site.county} communities can call ${phone} or use the estimate form.`,
+        },
+      ],
+    },
+    {
+      slug: `${site.folder}-exterior-paint-prep-checklist`,
+      title: `Exterior Paint Prep Checklist for ${site.shortPlace} Homes`,
+      description: `A step-by-step exterior painting prep checklist for ${site.place}, PA: washing, scraping, sanding, caulk, priming, and protecting landscaping before paint.`,
+      date: "2026-05-20",
+      category: "Exterior painting",
+      image: images.exterior2,
+      sections: [
+        {
+          heading: `Start with a walk-around in ${site.place}`,
+          body: `Before any scraping or sanding starts, walk the property and take notes on what is actually failing. Look for peeling paint at trim edges, open joints, popped caulk lines, soft wood, water staining under gutters, and any spots where sprinklers or shade keep surfaces damp. A short list of priorities helps keep the prep plan focused instead of “do everything.”`,
+        },
+        {
+          heading: "Wash, treat mildew, and let the surfaces dry",
+          body: `Exterior paint bonds best to clean, dry surfaces. Washing removes dirt, chalky residue, and spring pollen that can interfere with adhesion. If there are mildew-like dark areas, the prep plan should include appropriate cleaning and enough drying time so primer and paint are not trapped over moisture.`,
+        },
+        {
+          heading: "Scrape, sand, and feather peeling edges",
+          body: `Peeling paint needs to be scraped back to a sound edge, then sanded so the transition doesn’t telegraph through the finish. For older trim and porch details common around ${site.roads}, careful sanding and dust control matter as much as the new coating choice.`,
+        },
+        {
+          heading: "Caulk gaps and plan minor repairs before priming",
+          body: `Caulk works best after loose paint is removed and surfaces are clean. A painter should identify where flexible exterior caulk makes sense (small trim joints and gaps) versus where a repair or replacement is needed (soft wood or failing boards). Doing repairs before primer helps keep the final paint film continuous.`,
+        },
+        {
+          heading: "Prime bare spots and problem areas the right way",
+          body: `Primer is not one-size-fits-all. Bare wood, stained areas, patched repairs, and glossy surfaces can require different primers or bonding strategies. A solid estimate should specify where spot-priming is planned, when full priming is warranted, and how the primer choice supports the topcoat.`,
+        },
+        {
+          heading: "Protect landscaping and plan safe access",
+          body: `Prep and painting can impact plants, mulched beds, patios, and walkways. A good plan includes protecting shrubs and flowers near the work area, keeping windows and hardware clean, and confirming ladder placement or staging so crews can work safely around porches, railings, and entryways.`,
+        },
+        {
+          heading: `What to send with your ${site.shortPlace} estimate request`,
+          body: `For the fastest quote, share the address, the surfaces you want painted (siding, trim, shutters, doors, railings), and any known problem spots. Photos help. Homeowners near ${firstNearby}, ${secondNearby}, and surrounding ${site.county} communities can call ${phone} or use the estimate form to start the conversation.`,
+        },
+      ],
+      faqs: [
+        {
+          question: "Do I need to pressure wash before exterior painting?",
+          answer: "Most exteriors benefit from some form of washing to remove dirt and chalking so primer and paint can bond well. The method depends on the surface and condition; some projects use pressure washing carefully, while others use gentler washing approaches to avoid damage.",
+        },
+        {
+          question: "How long should siding dry before painting?",
+          answer: "It depends on the surface, weather, shade, and how wet the washing process was. The goal is fully dry, paintable surfaces before primer or paint goes on, so moisture isn’t trapped under the coating.",
+        },
+        {
+          question: "What if you find rotted wood during prep?",
+          answer: "Hidden damage sometimes shows up after scraping or probing soft spots. A professional should flag it, explain repair options, and confirm the scope change before moving forward so the finished work is stable under the paint.",
+        },
+        {
+          question: "Can you paint shutters, doors, and porch railings at the same time?",
+          answer: "Yes. Many exterior projects include multiple curb-appeal surfaces as one coordinated scope, as long as the prep plan matches the material and the condition of each surface.",
+        },
+        {
+          question: `Do you serve ${site.shortPlace} and nearby towns like ${firstNearby} and ${secondNearby}?`,
+          answer: `Yes. Estimate requests can cover ${site.place}, ${firstNearby}, ${secondNearby}, and nearby areas throughout ${site.county}. Share the project address and surfaces so the estimate scope matches your home.`,
+        },
+      ],
+    },
+    {
+      slug: `${site.folder}-room-painting-timeline`,
+      title: `How Long Does It Take to Paint a Room in ${site.shortPlace}?`,
+      description: `A practical room painting timeline for ${site.place}, PA homeowners: prep, patching, primer, coats, drying time, and how to plan around pets and furniture.`,
+      date: "2026-05-21",
+      category: "Interior painting",
+      image: images.interior,
+      sections: [
+        {
+          heading: `A realistic room painting timeline for ${site.place} homes`,
+          body: `Most room painting projects follow the same phases: protection and setup, surface prep, repairs, priming (when needed), finish coats, then cleanup and reinstalling hardware. The calendar time depends on what’s underneath the existing paint and how much prep the room needs, not just the room size.`,
+        },
+        {
+          heading: "Prep and repairs usually determine the schedule",
+          body: `Painting goes faster when walls are in good condition. If the room needs drywall patching, stain sealing, nail hole filling, caulk work, sanding, or fixing cracked corners, those steps can add time because repairs often need to dry before they can be sanded and coated. Homes around ${site.roads} sometimes have trim profiles, older doors, and high-traffic scuff patterns that require extra prep to look clean.`,
+        },
+        {
+          heading: "Primer and color changes can add steps",
+          body: "Not every room needs primer, but some do. Dark-to-light color changes, heavy stains, glossy surfaces, repaired areas, and certain high-wear rooms benefit from priming or spot-priming so the finish coats look even and hold up to cleaning.",
+        },
+        {
+          heading: "Ceilings, trim, and doors change the scope",
+          body: `“Paint a room” can mean walls only, or it can include the ceiling, baseboards, window trim, crown molding, and doors. Trim-heavy rooms and stairwell-adjacent areas common in ${site.county} homes take longer because cutting clean lines and achieving smooth enamel finishes is detail work.`,
+        },
+        {
+          heading: `How to plan for furniture, pets, and daily life in ${site.shortPlace}`,
+          body: `A smooth schedule starts with a quick plan: clear breakables, remove wall decor, and decide what furniture can shift to the center of the room. If you have pets or small children, ask how crews will manage doorways, drying walls, and daily cleanup. Homeowners near ${firstNearby}, ${secondNearby}, and surrounding ${site.place} neighborhoods can share a few photos and the scope (walls only vs. walls + trim + ceiling) to get a timeline that matches the room.`,
+        },
+        {
+          heading: "What to send with your estimate request",
+          body: `Include the room type (bedroom, living room, kitchen, bath), whether you want trim/doors/ceilings included, any known repair issues, and your color direction. Photos of problem areas help. A clear scope conversation leads to a more accurate schedule and fewer surprises once prep starts.`,
+        },
+      ],
+      faqs: [
+        {
+          question: `How long does it take to paint a bedroom in ${site.shortPlace}?`,
+          answer:
+            "It depends on prep, repairs, and whether trim and ceilings are included. Bedrooms in good condition can move quickly, while rooms that need patching, priming, or detailed trim work take longer. The best estimate includes your exact scope and photos.",
+        },
+        {
+          question: "Can you paint multiple rooms in one visit?",
+          answer:
+            "Often, yes. Grouping rooms can be efficient because prep materials, protection, and paint setup are already on site. A painter can recommend a sequence that keeps the home usable while work progresses.",
+        },
+        {
+          question: "Do I need to leave the house while a room is painted?",
+          answer:
+            "Not usually. Many projects can be completed while homeowners are home, especially when the scope is planned room-by-room. Let your painter know about pets, allergies, and any rooms that must stay accessible.",
+        },
+        {
+          question: "When can furniture go back after painting?",
+          answer:
+            "Light use is often possible after the room is dry to the touch, but full cure can take longer depending on the coating. Your painter should give practical guidance for moving furniture back and cleaning newly painted walls or trim.",
+        },
+        {
+          question: `Do you serve ${site.shortPlace} and nearby towns like ${firstNearby} and ${secondNearby}?`,
+          answer: `Yes. Estimate requests can cover ${site.place}, ${firstNearby}, ${secondNearby}, and nearby areas throughout ${site.county}. Share the project address and scope so the timeline matches your home.`,
+        },
+      ],
+    },
+    {
+      slug: `${site.folder}-wall-prep-before-painting`,
+      title: `Wall Prep Before Painting in ${site.shortPlace}: Patching, Sanding, and Priming`,
+      description: `A homeowner checklist for smoother walls in ${site.place}, PA: patching, sanding, caulk lines, stain-blocking primer, and what to photograph for an accurate estimate.`,
+      date: "2026-05-22",
+      category: "Prep & repair",
+      image: images.drywall,
+      sections: [
+        {
+          heading: "Start by identifying what the paint is trying to hide",
+          body: `Before you buy paint, walk the room in daylight and at night with a lamp held low to the wall. Look for nail holes, picture hook damage, dents, stress cracks, peeling spots, glossy patches, water stains, and uneven texture. Many ${site.shortPlace} homes have hallways and stairwells where scuffs and handprints build up, and those areas usually need more prep than a quiet guest room.`,
+        },
+        {
+          heading: "Patching is usually a multi-step process",
+          body: `Small nail holes can often be filled and sanded quickly, but larger repairs take a few steps: fill, dry, sand, then repeat until the patch is flat. If the wall has deep dents, loose tape, or crumbling areas, a painter may use setting-type compounds and reinforcement techniques so the repair stays stable under paint.`,
+        },
+        {
+          heading: "Sanding and dust control keep the finish from looking gritty",
+          body: "Even a great patch can look rough if it is not sanded smooth and the dust is not removed. A professional prep plan includes sanding, vacuuming or wiping down, protecting floors and furniture, and keeping dust out of HVAC returns so the final finish dries clean.",
+        },
+        {
+          heading: "Primer is how you prevent flashing and stain bleed-through",
+          body: `Patched areas and repaired corners often need spot-priming so the finish coat looks even. Water stains, marker, nicotine, and other discoloration can require stain-blocking primers so the spot does not reappear. A good painting estimate should specify when primer is planned and why.`,
+        },
+        {
+          heading: "Caulk and edge prep are what make trim lines look crisp",
+          body: `If you are painting walls next to baseboards, window trim, crown molding, or door casings, caulk gaps and loose joints before finish paint. Clean edges and smooth caulk lines are what make a room look “finished,” especially in trim-heavy ${site.county} homes.`,
+        },
+        {
+          heading: `How to request a prep-aware estimate near ${site.shortPlace}`,
+          body: `For the most accurate quote, send photos of the walls, trim, ceilings, and any problem areas from a few angles. Note whether the room needs patching, stain sealing, or wallpaper removal. Homeowners near ${firstNearby}, ${secondNearby}, and surrounding ${site.place} neighborhoods can share the address and scope so the prep plan matches the home.`,
+        },
+      ],
+      faqs: [
+        {
+          question: "Do I need to sand walls before repainting?",
+          answer:
+            "Often, yes. Sanding helps smooth patch work, knock down rough texture, and improve adhesion on glossy or uneven areas. The amount of sanding depends on wall condition and the finish you want.",
+        },
+        {
+          question: "Should patched areas be primed?",
+          answer:
+            "Usually, yes. Spot-priming patched drywall helps prevent flashing, where repaired areas look different from the surrounding wall after the finish coat dries.",
+        },
+        {
+          question: "Can you paint over water stains?",
+          answer:
+            "Not reliably without the right prep. Many stains need stain-blocking primer and the underlying moisture issue should be addressed first so the stain does not return through the new paint.",
+        },
+        {
+          question: "How do I know if cracks are a bigger drywall issue?",
+          answer:
+            "Hairline cracks can be cosmetic, but recurring cracks, loose tape, soft drywall, or visible movement can indicate a repair that needs reinforcement or more than simple spackle. A painter can evaluate the cause during an estimate.",
+        },
+        {
+          question: `Do you serve ${site.shortPlace} and nearby towns like ${firstNearby} and ${secondNearby}?`,
+          answer: `Yes. Estimate requests can cover ${site.place}, ${firstNearby}, ${secondNearby}, and nearby areas throughout ${site.county}. Share the project address and the condition notes so the prep plan matches your home.`,
+        },
+      ],
+    },
+  ];
+}
+
+function blogCard(post) {
+  return `<article>
+            ${img(post.image, post.title)}
+            <div>
+              <p class="blog-meta">${esc(post.category)} &middot; ${esc(post.date)}</p>
+              <h3><a href="/blog/${post.slug}">${esc(post.title)}</a></h3>
+              <p>${esc(post.description)}</p>
+            </div>
+          </article>`;
 }
 
 function css(site) {
@@ -774,6 +1160,7 @@ p { margin: 0; overflow-wrap: break-word; }
 }
 .button.primary { background: var(--gold); color: var(--navy); }
 .button.secondary { border: 1px solid rgba(255, 255, 255, 0.58); color: #fff; }
+.text-link { color: var(--blue); font-weight: 800; text-underline-offset: 0.18em; }
 .trust-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 24px 0 0; padding: 0; }
 .trust-list li {
   background: rgba(255, 255, 255, 0.14);
@@ -951,6 +1338,61 @@ p { margin: 0; overflow-wrap: break-word; }
 .why-grid article { min-height: 210px; padding: 24px; text-align: left; }
 .why-grid article h3 { font-size: 1.3rem; }
 .why-grid article p { font-size: 1rem; line-height: 1.55; }
+.blog-preview, .blog-index, .blog-post { background: #fff; }
+.blog-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.blog-grid article {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(10, 22, 40, 0.08);
+  overflow: hidden;
+}
+.blog-grid img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+.blog-grid article > div { display: grid; gap: 10px; padding: 20px; }
+.blog-grid h3 { margin: 0; }
+.blog-grid h3 a { color: var(--navy); text-decoration: none; }
+.blog-grid p:not(.blog-meta), .article-body p, .article-body li { color: var(--muted); }
+.blog-meta {
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.article-shell {
+  display: grid;
+  gap: 38px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  margin: 0 auto;
+  max-width: 1160px;
+}
+.article-body {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(10, 22, 40, 0.08);
+  padding: clamp(24px, 4vw, 44px);
+}
+.article-body h2 { color: var(--navy); font-size: clamp(1.55rem, 3vw, 2.35rem); margin-top: 32px; }
+.article-body h2:first-child { margin-top: 0; }
+.article-body p { font-size: 1.04rem; margin-top: 12px; }
+.article-sidebar {
+  align-self: start;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 14px;
+  padding: 22px;
+  position: sticky;
+  top: 112px;
+}
+.article-sidebar h3 { color: var(--navy); }
+.article-sidebar a { color: var(--blue); font-weight: 800; text-underline-offset: 0.18em; }
 .faq details { margin: 12px auto; max-width: 900px; padding: 18px 20px; }
 .faq summary { cursor: pointer; font-weight: 800; line-height: 1.3; text-wrap: balance; }
 .faq details p { margin-top: 12px; }
@@ -981,7 +1423,8 @@ p { margin: 0; overflow-wrap: break-word; }
   .site-header { align-items: flex-start; gap: 16px; flex-wrap: wrap; }
   nav { flex-wrap: wrap; justify-content: flex-end; }
   .intro, .hero-content, .local, .why, .contact-panel, .site-footer { grid-template-columns: 1fr; }
-  .service-grid, .answer-grid, .proof-notes, .why-grid, .photo-grid, .testimonial-grid, .township-grid { grid-template-columns: 1fr; }
+  .service-grid, .answer-grid, .proof-notes, .why-grid, .photo-grid, .testimonial-grid, .township-grid, .blog-grid, .article-shell { grid-template-columns: 1fr; }
+  .article-sidebar { position: static; }
 }
 @media (max-width: 640px) {
   .site-header { align-items: center; position: static; }
@@ -1075,6 +1518,7 @@ function page(site) {
         parentOrganization: {
           "@type": "HomeAndConstructionBusiness",
           name: "Heritage House Painting",
+          url: heritageUrl,
           telephone: "+1-215-791-4043",
           email,
           address: {
@@ -1129,7 +1573,7 @@ function page(site) {
         openingHoursSpecification: [
           { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "08:00", closes: "19:00" },
         ],
-        sameAs: [`https://${site.domain}/`, "https://heritagehousepainting.com"],
+        sameAs: [`https://${site.domain}/`, heritageUrl],
         subjectOf: proof.photos.map((photo) => ({
           "@type": "ImageObject",
           url: photo.src,
@@ -1302,6 +1746,7 @@ function page(site) {
           <p class="eyebrow">Recent Heritage project work</p>
           <h2 id="heritage-proof-title">Local painting proof behind ${esc(site.brand)}</h2>
           <p>These examples come from Heritage House Painting project photography and customer feedback. They help ${esc(site.shortPlace)} homeowners compare real interior painting, exterior painting, drywall repair, and finish work before requesting an estimate.</p>
+          <p><a class="text-link" href="/project-proof">View the full project proof and customer feedback page</a></p>
         </div>
         <div class="photo-grid">
           ${heritageProofPhotos}
@@ -1320,6 +1765,16 @@ function page(site) {
           <article>${img(images.exterior, `Exterior house painting project near ${site.shortPlace} PA`)}<h3>Exterior Painting</h3><p>Weather-aware exterior painting for siding, trim, shutters, doors, porches, railings, and curb appeal improvements across ${esc(site.place)} and nearby communities. Ask about 10% off qualifying exterior painting projects.</p></article>
           <article>${img(images.interior, `Interior house painting project near ${site.shortPlace} PA`)}<h3>Interior Painting</h3><p>Careful prep, crisp lines, smooth wall finishes, and premium coatings for bedrooms, kitchens, living rooms, stairways, and whole-home repaints in ${esc(site.shortPlace)}, ${esc(nearby.slice(0, 5).join(", "))}.</p></article>
           <article>${img(images.drywall, `Drywall finishing and painting project near ${site.shortPlace} PA`)}<h3>Drywall, Trim &amp; Finishes</h3><p>Drywall repair, patching, finish trim, carpentry touch-ups, cabinet painting, and specialty finishes for homes in ${esc(site.place)}, ${esc(nearby.slice(0, 4).join(", "))}, and nearby neighborhoods.</p></article>
+        </div>
+      </section>
+      <section class="section blog-preview" aria-labelledby="blog-preview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Local painting blog</p>
+          <h2 id="blog-preview-title">${esc(site.shortPlace)} painting advice for homeowners and answer engines</h2>
+          <p>Local blog posts give homeowners, Google, and AI answer engines clearer context about exterior painting timing, interior repainting, drywall repair, surfaces, neighborhoods, and estimate planning near ${esc(site.place)}.</p>
+        </div>
+        <div class="blog-grid">
+          ${blogPosts(site).map(blogCard).join("\n          ")}
         </div>
       </section>
       <section class="section project-photos" aria-labelledby="project-photos-title">
@@ -1384,12 +1839,169 @@ function page(site) {
         </div>
       </section>
     </main>
-    <footer class="site-footer">
-      <div><strong>${esc(site.brand)}</strong><p>${esc(site.brand)} is a local marketing website operated by Heritage House Painting. All contact requests, estimates, painting services, and customer communication are handled by Heritage House Painting.</p></div>
-      <div><strong>Heritage House Painting</strong><p>${esc(address)}<br><a href="tel:${phoneHref}">${phone}</a><br><a href="mailto:${email}">${email}</a></p></div>
-      <div><strong>Local painting searches</strong><p>Exterior painter ${esc(site.shortPlace)} PA, ${esc(site.shortPlace)} painters, house painter ${esc(site.place)} PA, interior painting ${esc(nearby[0])}, exterior painting ${esc(nearby[1])}, painters ${esc(nearby[2])} PA, ${esc(site.county)} painting contractor.</p></div>
-      <p class="copyright">&copy; 2026 ${esc(site.brand)}, a marketing site by Heritage House Painting. Heritage House Painting remains the service provider of record.</p>
-    </footer>
+    ${footer(site, "Local painting searches", `Exterior painter ${esc(site.shortPlace)} PA, ${esc(site.shortPlace)} painters, house painter ${esc(site.place)} PA, interior painting ${esc(nearby[0])}, exterior painting ${esc(nearby[1])}, painters ${esc(nearby[2])} PA, ${esc(site.county)} painting contractor.`)}
+    ${estimateFormScript()}
+  </body>
+</html>
+`;
+}
+
+function projectProofPage(site) {
+  const proof = proofFor(site);
+  const title = `${site.shortPlace} Painting Project Proof | ${site.brand}`;
+  const description = `Project photos, customer feedback, business disclosure, and local service proof for ${site.brand} estimate requests near ${site.place}, PA.`;
+  const proofPhotos = proofPhotoGrid(proof.photos.concat(Object.values(heritageProjectPhotos)), site, new Set(), 8);
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `https://${site.domain}/project-proof#webpage`,
+        url: `https://${site.domain}/project-proof`,
+        name: title,
+        description,
+        isPartOf: { "@id": `https://${site.domain}/#website` },
+        about: { "@id": `https://${site.domain}/#localbusiness` },
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: proof.photos[0].src,
+          caption: proof.photos[0].caption,
+        },
+        breadcrumb: { "@id": `https://${site.domain}/project-proof#breadcrumb` },
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://${site.domain}/project-proof#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: site.brand, item: `https://${site.domain}/` },
+          { "@type": "ListItem", position: 2, name: "Project proof", item: `https://${site.domain}/project-proof` },
+        ],
+      },
+      {
+        "@type": "ItemList",
+        "@id": `https://${site.domain}/project-proof#photos`,
+        name: `${site.shortPlace} painting project proof photos`,
+        itemListElement: proof.photos.map((photo, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "ImageObject",
+            url: photo.src,
+            caption: photo.caption,
+          },
+        })),
+      },
+      {
+        "@type": "Organization",
+        "@id": `${heritageUrl}/#organization`,
+        name: "Heritage House Painting",
+        url: heritageUrl,
+        telephone: "+1-215-791-4043",
+        email,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "4001 1st Ave",
+          addressLocality: "Lafayette Hill",
+          addressRegion: "PA",
+          postalCode: "19444",
+          addressCountry: "US",
+        },
+      },
+    ],
+  };
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${esc(title)}</title>
+    <meta name="description" content="${esc(description)}">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://${site.domain}/project-proof">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="${esc(site.brand)}">
+    <meta property="og:title" content="${esc(title)}">
+    <meta property="og:description" content="${esc(description)}">
+    <meta property="og:url" content="https://${site.domain}/project-proof">
+    <meta property="og:image" content="${proof.photos[0].src}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://imagedelivery.net">
+    <link rel="preload" as="image" href="${proof.photos[0].src}" fetchpriority="high">
+    <link rel="stylesheet" href="/styles.css">
+    ${analyticsScript}
+    <script type="application/ld+json">${JSON.stringify(schema, null, 6)}</script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="${esc(site.brand)} home">
+        <span class="brand-mark" aria-hidden="true">${site.monogram}</span>
+        <span class="brand-text"><strong>${esc(site.brand)}</strong><span>${esc(site.place)}, PA</span></span>
+      </a>
+      ${topNav(false)}
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="proof-title">
+        <div class="hero-media" style="background-image:url('${proof.photos[0].src}')" role="img" aria-label="${esc(proof.photos[0].alt)}"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-copy-block">
+            <p class="eyebrow">Project photos and customer feedback</p>
+            <h1 id="proof-title">${esc(site.shortPlace)} painting proof from Heritage House Painting</h1>
+            <p class="hero-copy">${esc(proof.note)} This page gives homeowners and search engines a clearer connection between ${esc(site.brand)}, Heritage House Painting, real project photography, customer feedback, and the local service area.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="tel:${phoneHref}">Call ${phone}</a>
+              <a class="button secondary" href="/#contact">Request Estimate</a>
+            </div>
+          </div>
+          <div class="estimate-form">
+            <p class="form-kicker">Business disclosure</p>
+            <h2>Operated by Heritage House Painting</h2>
+            <p class="form-note">${esc(site.brand)} is a local marketing site. Estimate requests, customer communication, and painting services are handled by <a href="${heritageUrl}">Heritage House Painting</a> at ${esc(address)}.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section heritage-proof" aria-labelledby="photo-proof-title">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio photos</p>
+          <h2 id="photo-proof-title">Painting, drywall, exterior, and finish work examples</h2>
+          <p>These are Heritage House Painting portfolio images used to support local estimate pages. They are not stock photos.</p>
+        </div>
+        <div class="photo-grid">
+          ${proofPhotos}
+        </div>
+      </section>
+      <section class="section answer-section" aria-labelledby="feedback-title">
+        <div class="section-heading">
+          <p class="eyebrow">Customer feedback</p>
+          <h2 id="feedback-title">Feedback used as local service proof</h2>
+          <p>Customer comments shown here are included to help homeowners compare experience, communication, cleanliness, and finish quality before requesting a local estimate.</p>
+        </div>
+        <div class="testimonial-grid" aria-label="Feedback from Heritage House Painting customers">
+          ${testimonialCards(proof.testimonials)}
+        </div>
+      </section>
+      <section class="section local-proof" aria-labelledby="authority-title">
+        <div class="section-heading">
+          <p class="eyebrow">Trust and local relevance</p>
+          <h2 id="authority-title">Why this proof matters for ${esc(site.shortPlace)} homeowners</h2>
+          <p>Search engines and homeowners both need more than repeated town names. This page ties the local site to a real painting company, real project assets, service-area context, and clear contact information.</p>
+        </div>
+        <div class="proof-notes">
+          <article><h3>Company of record</h3><p>Heritage House Painting handles estimate requests and painting services from this local site. The main company site is <a href="${heritageUrl}">heritagehousepainting.com</a>.</p></article>
+          <article><h3>Local context</h3><p>${esc(site.localProof)}. Nearby context includes ${esc(site.landmarks.join(", "))}.</p></article>
+          <article><h3>Services supported</h3><p>${serviceLinks(site)}</p></article>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-panel">
+          <div><p class="eyebrow">Free local estimate</p><h2>Use this proof to plan your ${esc(site.shortPlace)} painting estimate</h2><p>Share the project address, surfaces, timing, and any repair or color notes. Mention the 10% exterior painting offer for qualifying exterior projects.</p></div>
+          ${estimateForm(site)}
+        </div>
+      </section>
+    </main>
+    ${footer(site)}
     ${estimateFormScript()}
   </body>
 </html>
@@ -1539,12 +2151,197 @@ function servicePage(site, service) {
         </div>
       </section>
     </main>
-    <footer class="site-footer">
-      <div><strong>${esc(site.brand)}</strong><p>${esc(site.brand)} is a local marketing website operated by Heritage House Painting. All contact requests, estimates, painting services, and customer communication are handled by Heritage House Painting.</p></div>
-      <div><strong>Heritage House Painting</strong><p>${esc(address)}<br><a href="tel:${phoneHref}">${phone}</a><br><a href="mailto:${email}">${email}</a></p></div>
-      <div><strong>Service areas</strong><p>${esc(site.place)}, ${esc(site.nearby.join(", "))}, and nearby ${esc(site.county)} communities.</p></div>
-      <p class="copyright">&copy; 2026 ${esc(site.brand)}, a marketing site by Heritage House Painting.</p>
-    </footer>
+    ${footer(site, "Service areas", `${esc(site.place)}, ${esc(site.nearby.join(", "))}, and nearby ${esc(site.county)} communities.`)}
+    ${estimateFormScript()}
+  </body>
+</html>
+`;
+}
+
+function blogIndexPage(site) {
+  const posts = blogPosts(site);
+  const title = `${site.shortPlace} Painting Blog | ${site.brand}`;
+  const description = `Local painting advice for ${site.place}, PA homeowners, including exterior painting, interior painting, drywall repair, prep, timing, and estimate planning.`;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": `https://${site.domain}/blog#blog`,
+    url: `https://${site.domain}/blog`,
+    name: title,
+    description,
+    publisher: { "@id": `https://${site.domain}/#localbusiness` },
+    blogPost: posts.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.description,
+      datePublished: post.date,
+      dateModified: post.date,
+      url: `https://${site.domain}/blog/${post.slug}`,
+      image: post.image,
+    })),
+    inLanguage: "en-US",
+  };
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${esc(title)}</title>
+    <meta name="description" content="${esc(description)}">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://${site.domain}/blog">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="${esc(site.brand)}">
+    <meta property="og:title" content="${esc(title)}">
+    <meta property="og:description" content="${esc(description)}">
+    <meta property="og:url" content="https://${site.domain}/blog">
+    <meta property="og:image" content="${posts[0].image}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://imagedelivery.net">
+    <link rel="stylesheet" href="/styles.css">
+    ${analyticsScript}
+    <script type="application/ld+json">${JSON.stringify(schema, null, 6)}</script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="${esc(site.brand)} home">
+        <span class="brand-mark" aria-hidden="true">${site.monogram}</span>
+        <span class="brand-text"><strong>${esc(site.brand)}</strong><span>${esc(site.place)}, PA</span></span>
+      </a>
+      ${topNav(false)}
+    </header>
+    <main>
+      <section class="section blog-index" aria-labelledby="blog-title">
+        <div class="section-heading">
+          <p class="eyebrow">Local painting blog</p>
+          <h1 id="blog-title">${esc(site.shortPlace)} painting guides and estimate advice</h1>
+          <p>Helpful, locally specific articles for homeowners comparing painters, planning exterior painting, preparing rooms, reviewing drywall repairs, and understanding service coverage near ${esc(site.place)}.</p>
+        </div>
+        <div class="blog-grid">
+          ${posts.map(blogCard).join("\n          ")}
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-panel">
+          <div><p class="eyebrow">Free local estimate</p><h2>Have a ${esc(site.shortPlace)} painting project in mind?</h2><p>Use the estimate form with your project address, surfaces, timing, and any repair or color notes.</p></div>
+          ${estimateForm(site)}
+        </div>
+      </section>
+    </main>
+    ${footer(site)}
+    ${estimateFormScript()}
+  </body>
+</html>
+`;
+}
+
+function blogPostPage(site, post) {
+  const title = `${post.title} | ${site.brand}`;
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": `https://${site.domain}/blog/${post.slug}#article`,
+        headline: post.title,
+        description: post.description,
+        image: post.image,
+        datePublished: post.date,
+        dateModified: post.date,
+        author: { "@type": "Organization", name: "Heritage House Painting" },
+        publisher: { "@id": `https://${site.domain}/#localbusiness` },
+        mainEntityOfPage: `https://${site.domain}/blog/${post.slug}`,
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `https://${site.domain}/blog/${post.slug}#faq`,
+        mainEntity: post.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://${site.domain}/blog/${post.slug}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: site.brand, item: `https://${site.domain}/` },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `https://${site.domain}/blog` },
+          { "@type": "ListItem", position: 3, name: post.title, item: `https://${site.domain}/blog/${post.slug}` },
+        ],
+      },
+    ],
+  };
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${esc(title)}</title>
+    <meta name="description" content="${esc(post.description)}">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://${site.domain}/blog/${post.slug}">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="${esc(site.brand)}">
+    <meta property="og:title" content="${esc(title)}">
+    <meta property="og:description" content="${esc(post.description)}">
+    <meta property="og:url" content="https://${site.domain}/blog/${post.slug}">
+    <meta property="og:image" content="${post.image}">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://imagedelivery.net">
+    <link rel="preload" as="image" href="${post.image}" fetchpriority="high">
+    <link rel="stylesheet" href="/styles.css">
+    ${analyticsScript}
+    <script type="application/ld+json">${JSON.stringify(schema, null, 6)}</script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="${esc(site.brand)} home">
+        <span class="brand-mark" aria-hidden="true">${site.monogram}</span>
+        <span class="brand-text"><strong>${esc(site.brand)}</strong><span>${esc(site.place)}, PA</span></span>
+      </a>
+      ${topNav(false)}
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="article-title">
+        <div class="hero-media" style="background-image:url('${post.image}')" role="img" aria-label="${esc(post.title)}"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-copy-block">
+            <p class="eyebrow">${esc(post.category)} near ${esc(site.shortPlace)}, PA</p>
+            <h1 id="article-title">${esc(post.title)}</h1>
+            <p class="hero-copy">${esc(post.description)}</p>
+            <div class="hero-actions">
+              <a class="button primary" href="tel:${phoneHref}">Call ${phone}</a>
+              <a class="button secondary" href="/blog">All Blog Posts</a>
+            </div>
+          </div>
+          ${estimateForm(site)}
+        </div>
+      </section>
+      <section class="section blog-post">
+        <div class="article-shell">
+          <article class="article-body">
+            ${post.sections.map((section) => `<h2>${esc(section.heading)}</h2><p>${esc(section.body)}</p>`).join("\n            ")}
+            <h2>Common questions</h2>
+            ${post.faqs.map((faq) => `<h3>${esc(faq.question)}</h3><p>${esc(faq.answer)}</p>`).join("\n            ")}
+          </article>
+          <aside class="article-sidebar" aria-label="Related painting resources">
+            <p class="blog-meta">${esc(post.date)}</p>
+            <h3>Plan a local estimate</h3>
+            <p>Share the project address, surfaces, timing, and repair notes for a faster ${esc(site.shortPlace)} painting estimate.</p>
+            <a href="/#contact">Request estimate</a>
+            <a href="/exterior-painting">Exterior painting</a>
+            <a href="/interior-painting">Interior painting</a>
+            <a href="/drywall-repair">Drywall repair</a>
+          </aside>
+        </div>
+      </section>
+    </main>
+    ${footer(site, "More local pages")}
     ${estimateFormScript()}
   </body>
 </html>
@@ -1576,6 +2373,7 @@ Sitemap: https://${site.domain}/sitemap.xml
 
 function sitemap(site) {
   const proof = proofFor(site);
+  const posts = blogPosts(site);
   const proofImages = proof.photos.map((photo) => `    <image:image><image:loc>${photo.src}</image:loc><image:title>${esc(photo.caption)}</image:title></image:image>`).join("\n");
   const serviceUrls = servicePages.map((service) => `  <url>
     <loc>https://${site.domain}/${service.slug}</loc>
@@ -1584,6 +2382,26 @@ function sitemap(site) {
     <priority>0.8</priority>
     <image:image><image:loc>${service.image}</image:loc><image:title>${service.title} in ${site.shortPlace}, PA</image:title></image:image>
   </url>`).join("\n");
+  const proofUrl = `  <url>
+    <loc>https://${site.domain}/project-proof</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+${proofImages}
+  </url>`;
+  const blogUrls = `  <url>
+    <loc>https://${site.domain}/blog</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+${posts.map((post) => `  <url>
+    <loc>https://${site.domain}/blog/${post.slug}</loc>
+    <lastmod>${post.date}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+    <image:image><image:loc>${post.image}</image:loc><image:title>${esc(post.title)}</image:title></image:image>
+  </url>`).join("\n")}`;
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
@@ -1598,13 +2416,16 @@ function sitemap(site) {
     <image:image><image:loc>${images.drywall}</image:loc><image:title>Drywall finishing project</image:title></image:image>
 ${proofImages}
   </url>
+${proofUrl}
 ${serviceUrls}
+${blogUrls}
 </urlset>
 `;
 }
 
 function llms(site) {
   const proof = proofFor(site);
+  const posts = blogPosts(site);
   return `# ${site.brand}
 
 ${site.brand} is a local painting estimate website for homeowners searching for exterior painters, interior painters, house painters, drywall repair, trim painting, cabinet painting, commercial painting, and seasonal exterior painting offers in ${site.place}, Pennsylvania and nearby communities.
@@ -1618,6 +2439,14 @@ Primary services:
 - Cabinet and trim painting: https://${site.domain}/cabinet-trim-painting
 - Commercial painting
 - Local painting estimates
+
+Project proof:
+- Project proof and customer feedback page: https://${site.domain}/project-proof
+- The local marketing site is operated by Heritage House Painting: ${heritageUrl}
+
+Local blog:
+- Blog index: https://${site.domain}/blog
+${posts.map((post) => `- ${post.title}: https://${site.domain}/blog/${post.slug}`).join("\n")}
 
 Seasonal offer:
 - 10% off qualifying exterior painting projects requested through ${site.brand}.
@@ -1644,16 +2473,21 @@ Contact:
 - Phone: +1-215-791-4043
 - Email: ${email}
 - Estimate form: https://${site.domain}/#contact
+- Main company website: ${heritageUrl}
 
 Summary:
 ${site.brand} helps local homeowners request estimates for exterior painting, interior painting, drywall repair, trim finishing, cabinet painting, and commercial painting near ${site.place}, PA. The current seasonal focus is exterior painting, with a 10% offer for qualifying exterior projects.
 `;
 }
 
-function vercel() {
+function vercel(site) {
   const serviceRewrites = servicePages.map((service) => `    {
       "source": "/${service.slug}",
       "destination": "/${service.slug}.html"
+    }`).join(",\n");
+  const blogRewrites = blogPosts(site).map((post) => `    {
+      "source": "/blog/${post.slug}",
+      "destination": "/blog/${post.slug}.html"
     }`).join(",\n");
   return `{
   "cleanUrls": true,
@@ -1672,11 +2506,64 @@ function vercel() {
   "rewrites": [
 ${serviceRewrites},
     {
+      "source": "/project-proof",
+      "destination": "/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+${blogRewrites},
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }
   ]
 }
+`;
+}
+
+function rootVercel() {
+  const rootSite = sites.find((site) => site.folder === "horshampainters");
+  const routedSites = sites.filter((site) => site.folder !== "horshampainters");
+  const hostRewrites = [];
+
+  for (const site of routedSites) {
+    for (const host of [site.domain, `www.${site.domain}`]) {
+      for (const file of ["styles.css", "robots.txt", "sitemap.xml", "llms.txt"]) {
+        hostRewrites.push({
+          source: `/${file}`,
+          has: [{ type: "host", value: host }],
+          destination: `/sites/${site.folder}/${file}`,
+        });
+      }
+
+      for (const rewrite of JSON.parse(vercel(site)).rewrites) {
+        hostRewrites.push({
+          source: rewrite.source,
+          has: [{ type: "host", value: host }],
+          destination: rewrite.destination === "/index.html" ? `/sites/${site.folder}/index.html` : `/sites/${site.folder}${rewrite.destination}`,
+        });
+      }
+    }
+  }
+
+  return `${JSON.stringify({
+    cleanUrls: true,
+    trailingSlash: false,
+    headers: [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "index, follow",
+          },
+        ],
+      },
+    ],
+    rewrites: hostRewrites.concat(JSON.parse(vercel(rootSite)).rewrites),
+  }, null, 2)}
 `;
 }
 
@@ -1687,8 +2574,15 @@ for (const site of sites) {
   const dir = path.join(outRoot, site.folder);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "index.html"), page(site));
+  fs.writeFileSync(path.join(dir, "project-proof.html"), projectProofPage(site));
   for (const service of servicePages) {
     fs.writeFileSync(path.join(dir, `${service.slug}.html`), servicePage(site, service));
+  }
+  const blogDir = path.join(dir, "blog");
+  fs.mkdirSync(blogDir, { recursive: true });
+  fs.writeFileSync(path.join(blogDir, "index.html"), blogIndexPage(site));
+  for (const post of blogPosts(site)) {
+    fs.writeFileSync(path.join(blogDir, `${post.slug}.html`), blogPostPage(site, post));
   }
   fs.writeFileSync(path.join(dir, "styles.css"), css(site));
   fs.copyFileSync(path.join(process.cwd(), "analytics.js"), path.join(dir, "analytics.js"));
@@ -1696,9 +2590,15 @@ for (const site of sites) {
   fs.writeFileSync(path.join(dir, "robots.txt"), robots(site));
   fs.writeFileSync(path.join(dir, "sitemap.xml"), sitemap(site));
   fs.writeFileSync(path.join(dir, "llms.txt"), llms(site));
-  fs.writeFileSync(path.join(dir, "vercel.json"), vercel());
+  fs.writeFileSync(path.join(dir, "vercel.json"), vercel(site));
   fs.mkdirSync(path.join(dir, "api"), { recursive: true });
-  fs.writeFileSync(path.join(dir, "api", "estimate.js"), 'process.env.LEAD_FROM_EMAIL =\n  process.env.LEAD_FROM_EMAIL || "Heritage House Painting <estimates@send.heritagehousepainting.com>";\n\nmodule.exports = require("../../../api/estimate");\n');
+  if (site.folder === "horshampainters") {
+    fs.copyFileSync(path.join(process.cwd(), "api", "estimate.js"), path.join(dir, "api", "estimate.js"));
+  } else {
+    fs.writeFileSync(path.join(dir, "api", "estimate.js"), 'process.env.LEAD_FROM_EMAIL =\n  process.env.LEAD_FROM_EMAIL || "Heritage House Painting <estimates@send.heritagehousepainting.com>";\n\nmodule.exports = require("../../../api/estimate");\n');
+  }
 }
+
+fs.writeFileSync(path.join(outRoot, "horshampainters", "vercel.json"), rootVercel());
 
 console.log(`Generated ${sites.length} sites in ${outRoot}`);

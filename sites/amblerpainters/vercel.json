@@ -30,6 +30,42 @@
       "destination": "/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "destination": "/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/blog/amblerpainters-exterior-painting-season-guide",
+      "destination": "/blog/amblerpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/amblerpainters-exterior-paint-home-value-protection",
+      "destination": "/blog/amblerpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/amblerpainters-sherwin-williams-paint-types-sheens-quality",
+      "destination": "/blog/amblerpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/amblerpainters-how-to-find-trusted-professional-painter",
+      "destination": "/blog/amblerpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/amblerpainters-exterior-paint-prep-checklist",
+      "destination": "/blog/amblerpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/amblerpainters-room-painting-timeline",
+      "destination": "/blog/amblerpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/amblerpainters-wall-prep-before-painting",
+      "destination": "/blog/amblerpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }

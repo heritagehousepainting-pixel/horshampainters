@@ -30,6 +30,42 @@
       "destination": "/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "destination": "/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-exterior-painting-season-guide",
+      "destination": "/blog/bluebellpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-exterior-paint-home-value-protection",
+      "destination": "/blog/bluebellpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-sherwin-williams-paint-types-sheens-quality",
+      "destination": "/blog/bluebellpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-how-to-find-trusted-professional-painter",
+      "destination": "/blog/bluebellpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-exterior-paint-prep-checklist",
+      "destination": "/blog/bluebellpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-room-painting-timeline",
+      "destination": "/blog/bluebellpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-wall-prep-before-painting",
+      "destination": "/blog/bluebellpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }

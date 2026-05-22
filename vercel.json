@@ -94,6 +94,96 @@
       "destination": "/sites/lowergwyneddpainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/index.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -184,6 +274,96 @@
       "destination": "/sites/lowergwyneddpainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/index.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/lowergwyneddpainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lowergwyneddpainters.com"
+        }
+      ],
+      "destination": "/sites/lowergwyneddpainters/blog/lowergwyneddpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -274,6 +454,96 @@
       "destination": "/sites/amblerpainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/index.html"
+    },
+    {
+      "source": "/blog/amblerpainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/amblerpainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/amblerpainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/amblerpainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/amblerpainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/amblerpainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/amblerpainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -364,6 +634,96 @@
       "destination": "/sites/amblerpainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/index.html"
+    },
+    {
+      "source": "/blog/amblerpainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/amblerpainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/amblerpainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/amblerpainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/amblerpainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/amblerpainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/amblerpainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.amblerpainters.com"
+        }
+      ],
+      "destination": "/sites/amblerpainters/blog/amblerpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -454,6 +814,96 @@
       "destination": "/sites/bluebellpainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/index.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -544,6 +994,96 @@
       "destination": "/sites/bluebellpainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/index.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/bluebellpainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bluebellpainters.com"
+        }
+      ],
+      "destination": "/sites/bluebellpainters/blog/bluebellpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -634,6 +1174,96 @@
       "destination": "/sites/lafayettehillpainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/index.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -724,6 +1354,96 @@
       "destination": "/sites/lafayettehillpainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/index.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/lafayettehillpainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lafayettehillpainters.com"
+        }
+      ],
+      "destination": "/sites/lafayettehillpainters/blog/lafayettehillpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -814,6 +1534,96 @@
       "destination": "/sites/plymouthmeetingpainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/index.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -904,6 +1714,96 @@
       "destination": "/sites/plymouthmeetingpainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/index.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/plymouthmeetingpainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.plymouthmeetingpainters.com"
+        }
+      ],
+      "destination": "/sites/plymouthmeetingpainters/blog/plymouthmeetingpainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -994,6 +1894,96 @@
       "destination": "/sites/gladwynepainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/index.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -1084,6 +2074,96 @@
       "destination": "/sites/gladwynepainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/index.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/gladwynepainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.gladwynepainters.com"
+        }
+      ],
+      "destination": "/sites/gladwynepainters/blog/gladwynepainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -1174,6 +2254,96 @@
       "destination": "/sites/waynepainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/index.html"
+    },
+    {
+      "source": "/blog/waynepainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/waynepainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/waynepainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/waynepainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/waynepainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/waynepainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/waynepainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -1264,6 +2434,96 @@
       "destination": "/sites/waynepainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/index.html"
+    },
+    {
+      "source": "/blog/waynepainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/waynepainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/waynepainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/waynepainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/waynepainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/waynepainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/waynepainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.waynepainters.com"
+        }
+      ],
+      "destination": "/sites/waynepainters/blog/waynepainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -1354,6 +2614,96 @@
       "destination": "/sites/ardmorepainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/index.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -1444,6 +2794,96 @@
       "destination": "/sites/ardmorepainters/cabinet-trim-painting.html"
     },
     {
+      "source": "/project-proof",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/index.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-exterior-painting-season-guide",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-exterior-paint-home-value-protection",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-sherwin-williams-paint-types-sheens-quality",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-how-to-find-trusted-professional-painter",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-exterior-paint-prep-checklist",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-room-painting-timeline",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/ardmorepainters-wall-prep-before-painting",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ardmorepainters.com"
+        }
+      ],
+      "destination": "/sites/ardmorepainters/blog/ardmorepainters-wall-prep-before-painting.html"
+    },
+    {
       "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "has": [
         {
@@ -1470,7 +2910,43 @@
       "destination": "/cabinet-trim-painting.html"
     },
     {
-      "source": "/((?!api/|assets/|styles.css|analytics.js|horsham-painters-logo(?:-cropped)?\\.png|robots.txt|sitemap.xml|llms.txt).*)",
+      "source": "/project-proof",
+      "destination": "/project-proof.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/blog/horshampainters-exterior-painting-season-guide",
+      "destination": "/blog/horshampainters-exterior-painting-season-guide.html"
+    },
+    {
+      "source": "/blog/horshampainters-exterior-paint-home-value-protection",
+      "destination": "/blog/horshampainters-exterior-paint-home-value-protection.html"
+    },
+    {
+      "source": "/blog/horshampainters-sherwin-williams-paint-types-sheens-quality",
+      "destination": "/blog/horshampainters-sherwin-williams-paint-types-sheens-quality.html"
+    },
+    {
+      "source": "/blog/horshampainters-how-to-find-trusted-professional-painter",
+      "destination": "/blog/horshampainters-how-to-find-trusted-professional-painter.html"
+    },
+    {
+      "source": "/blog/horshampainters-exterior-paint-prep-checklist",
+      "destination": "/blog/horshampainters-exterior-paint-prep-checklist.html"
+    },
+    {
+      "source": "/blog/horshampainters-room-painting-timeline",
+      "destination": "/blog/horshampainters-room-painting-timeline.html"
+    },
+    {
+      "source": "/blog/horshampainters-wall-prep-before-painting",
+      "destination": "/blog/horshampainters-wall-prep-before-painting.html"
+    },
+    {
+      "source": "/((?!api/|styles.css|analytics.js|robots.txt|sitemap.xml|llms.txt).*)",
       "destination": "/index.html"
     }
   ]
